@@ -15,8 +15,8 @@ caseText
 # sllaw:      审理法院
 # casetype:
 # flag:
-# texttype       文书总类
-# caseNo:         案件号
+ texttype       文书总类
+ caseNo:         案件号
 # sldate         审理日期
 # content:
 
