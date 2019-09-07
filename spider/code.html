@@ -1,0 +1,115 @@
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/pub/blueskin/css/reset.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="/pub/blueskin/css/global.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="/pub/blueskin/css/common.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="/pub/blueskin/css/mainnav.css" media="all" />
+		<link type="text/css" rel="stylesheet" href="/pub/blueskin/css/QRCode.css" />
+		<link type="text/css" rel="stylesheet" href="/jq/jquery-ui/jquery-ui-1.9.2.custom.css" />
+        <link type="text/css" rel="stylesheet" href="/pub/blueskin/css/ui_date_plugin.css" />
+    
+    
+
+
+
+<script type="text/javascript">
+    var contextPath = "";
+</script>
+<script type="text/javascript" src="/jq/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="/jq/smartpaginator/jquery.pagination.js"></script>
+<script type="text/javascript" src="/pub/comm.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title></title>
+<script type="text/javascript"
+	src="/pub/kaptcha/js/kaptcha.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="/pub/kaptcha/css/common.css" media="all" />
+<link rel="stylesheet" type="text/css"
+	href="/pub/kaptcha/css/login.css" media="all" />
+</head>
+<body>
+<form action="" method="post">
+<input id="targetUrl" type="hidden" value="/cpws/index.htm?"/>
+<input id="queryString" type="hidden" value="st=1&amp;q=&amp;sxnflx=0&amp;prompt=&amp;dsrName=&amp;ajmc=&amp;ajlb=&amp;jbfyId=&amp;zscq=&amp;ay=&amp;ah=&amp;cwslbmc=&amp;startCprq=&amp;endCprq=&amp;page=20">
+		<div class="authcode_flmc clearfix" align="center">
+			<div class="setcode_aflmc com_flmc claerfix">
+				<i class="l_cflmc"></i> <input type="text" autocomplete="off"
+					id="yzmInput" name="yzmInput" value="验证码" /> <i class="r_cflmc"></i>
+			</div>
+			<div class="getcode_aflmc com_flmc">
+				<i class="l_cflmc"></i> <img id="yzmImg"
+					src="/yzm.jpg" width="70px" height="25px" /> <a
+					href="javascript:void(0);" id="yzmBtn" class="icn_cflmc"></a> <i
+					class="r_cflmc"></i>
+			</div>
+		</div>
+		<div class="com_error clearfix " id="tips"></div>
+		<div class="btngroup_flmc clearfix">
+			<div class="login_bflmc">
+				<a href="javascript:void(0)" class="" id="loginBtn"> <i
+					class="l_lbflmc"></i> <span>提交</span> <i class="r_lbflmc"></i>
+				</a>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        loginPage();
+        enterPress('yzmInput', 'loginBtn', 'click');
+    });
+    function enterPress(id, nextId, type){
+        $('#'+id).keypress(
+            function (event){
+                if(event.which == 13 ) {
+                    if(type == 'changeFocus'){
+                        $(this).blur($('#'+nextId).focus());
+                    } else if (type == 'click'){
+                        $('#'+nextId).click();
+                    }
+                }
+            }
+        );
+    }
+    
+    $("#yzmInput").live("focus",function(){
+        var searchContent = $("#yzmInput").attr("value");
+        if (searchContent == '验证码') {
+             $("#yzmInput").val("");
+        }
+    });
+    
+    $("#yzmInput").live("blur",function(){
+        var searchContent = $("#yzmInput").attr("value");
+        if (searchContent == '') {
+             $("#yzmInput").val("验证码");
+        }
+    });
+    
+</script>

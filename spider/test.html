@@ -1,0 +1,248 @@
+北京法院审判信息网-裁判文书
+var contextPath = ""; var SearchParam={Type:"cpws",TypeName:"裁判文书"};
+北京互联网法院电子诉讼平台
+北京法院电子诉讼平台
+法官 咨询 投诉
+个人评价
+常见问题
+function strFm(str){ var p = new Promise(function(resolve,reject){ var cc = JSON.parse(str); resolve(cc); // reject(JSON.parse(str)); }); return p; } $('.casLogin-rigth').click(function(){ debugger var type = $(this).attr("attr-type"); $.post(contextPath + "/home/hlwfy.htm",{ type : type }, function(data){ strFm(data).then(function(dataJson){ if(dataJson.code == 200){ window.open(dataJson.message); } else { alert("跳转失败，请重试！"); } }).catch(function(err){ window.open(contextPath + "/login/pro.htm"); }) }); });
+登录 网站访问量：886561054
+首页
+法院要闻
+法院要闻
+北京法院召开全市法院工作会议
+北京知识产权法院审结“中国喷泉著作权纠纷第一案”
+大兴法院通报涉特许经营典型案例并提示创业风险
+昌平法院通报劳争案件不诚信履约行为典型案例
+更多......
+重要通知
+最高人民法院、最高人民检察院关于办理利用未公开信息交易刑事案件适用法律若干问题的解释
+最高人民法院、最高人民检察院关于办理操纵证券、期货市场刑事案件适用法律若干问题的解释
+最高人民法院关于审理生态环境损害赔偿案件的若干规定（试行）
+最高人民法院关于适用《中华人民共和国公司法》若干问题的规定（五）
+更多......
+法院工作报告
+北京市高级人民法院2018年工作报告
+北京市高级人民法院2017年工作报告
+北京市高级人民法院2016年工作报告
+北京市高级人民法院2015年工作报告
+更多......
+公告公示
+开庭公告
+鉴拍公告
+拍卖公告
+变卖公告
+破产管理人
+悬赏公告
+其他公告
+减刑假释类公示
+裁判文书
+案由 生效日期 至 案号 搜 索
+裁判文书公开的技术处理标准
+裁判文书公开信息的查询方法
+裁判文书的公开范围
+$("#navSearchSubmitButton").click(function(e){ /* 日期正则表达式 */ var datePat = /^(19[7-9]\d|20\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])$/; e.preventDefault(); $("#navCpwsTips").html(); var startCprq = $("#navStartCprq").val(); var endCprq = $("#navEndCprq").val(); if (startCprq.length>0 &&!datePat.test(startCprq)) { $("#navCpwsTips").html("生效日期的起始日期格式错误：格式为yyyy-MM-dd，范围为[1970-01-01 ~ 2099-12-31]。"); return; } if (endCprq.length>0 &&!datePat.test(endCprq)) { $("#navCpwsTips").html("生效日期的截止日期格式错误：格式为yyyy-MM-dd，范围为[1970-01-01 ~ 2099-12-31]。"); return; } if (endCprq.length>0 && startCprq.length>0 &&startCprq.localeCompare(endCprq) == 1) { $("#navCpwsTips").html("生效日期的起始日期不能大于截止日期。"); return; } $("#navSearchForm").submit(); });
+审判流程
+北京法院指导文件
+民事审判业务规范
+商事审判业务规范
+知识产权审判业务规范
+刑事审判业务规范
+审判管理
+行政审判业务规范
+执行业务规范
+国家赔偿业务规范
+未成年审判业务规范
+最高法院指导文件
+民事审判业务规范
+商事审判业务规范
+知识产权审判业务规范
+刑事审判业务规范
+其他
+行政审判业务规范
+执行业务规范
+国家赔偿业务规范
+未成年审判业务规范
+审判流程公开范围
+审判流程查询方法
+执行信息
+信息类型 失信
+失信
+终本
+失信范围 失信被执行人
+失信被执行人
+限制出境被执行人
+限制高消费被执行人
+限制招投标被执行人
+全部
+全部
+自然人
+法人或其他组织
+案号
+搜 索
+执行信息公开信息的查询方法
+执行信息的公开范围
+$(document).ready(function() { $("#ajxxlxSearch").addSelect({ triggerEleId:"sp_mousedown_ajxxlx", searchContentContain:".search_con_nav", addHoverClass:"dd_hover", getValueClass:".ajxxlxTarget" }); $("#bzxrzlSearch").addSelect({ triggerEleId:"sp_mousedown_bzxrzl", searchContentContain:".search_con_nav", addHoverClass:"dd_hover", getValueClass:".bzxrzl_lable" }); $("#zxxxzlSearch").addSelect({ triggerEleId:"sp_mousedown_zxxxzl", searchContentContain:".search_con_nav", addHoverClass:"dd_hover", getValueClass:".zxxxzlTarget" }); $("#search_con_nav_bzxrzl").children("dd").each(function() { $(this).click(function() { $("#bzxrzl_value").attr("value",$(this).attr("value")); }); }); $("#search_con_nav_header").children("dd").each(function() { $(this).click(function() { $("#zxxxzl_value").attr("value",$(this).attr("value")); }); }); $("#search_con_nav_ajxxlx").children("dd").each(function() { $(this).click(function() { $("#ajxxlx_value").attr("value",$(this).attr("value")); if($("#ajxxlx_value").val()==2){ $("#zxxxzlTarget").text(""); $("#sp_mousedown_zxxxzl").hide(); $("#zxxxzl_value").val("100013006"); } if($("#ajxxlx_value").val()==1){ $("#zxxxzlTarget").text("失信被执行人"); $("#sp_mousedown_zxxxzl").show(); } }); }); $("#zxxx_header_submit").click(function(e){ if(document.getElementById("zxxxzl_value").value!=100013001){ document.navZxxxSearchForm.action="/zxxx/indexOld.htm"; } e.preventDefault(); $("#navZxxxSearchForm").submit(); }) });
+法官信息
+北京市高级人民法院
+北京市第一中级人民法院
+北京市海淀区人民法院
+北京市石景山区人民法院
+北京市门头沟区人民法院
+北京市昌平区人民法院
+北京市延庆区人民法院
+北京市第二中级人民法院
+北京市东城区人民法院
+北京市西城区人民法院
+北京市丰台区人民法院
+北京市房山区人民法院
+北京市大兴区人民法院
+北京市第三中级人民法院
+北京市朝阳区人民法院
+北京市通州区人民法院
+北京市顺义区人民法院
+北京市怀柔区人民法院
+北京市平谷区人民法院
+北京市密云区人民法院
+北京市第四中级人民法院
+北京互联网法院
+北京知识产权法院
+名册信息
+人民陪审员名册
+北京市第一中级人民法院人民陪审员名册
+北京市第二中级人民法院人民陪审员名册
+北京市第三中级人民法院人民陪审员名册
+北京市东城区人民法院人民陪审员名册
+更多......
+特邀调解组织和特邀调解员名册
+北京市高级人民法院特邀调解组织和特邀调解员名册
+北京市第一中级人民法院特邀调解组织和特邀调解员名册
+北京市第二中级人民法院特邀调解组织和特邀调解员名册
+北京市第三中级人民法院特邀调解组织和特邀调解员名册
+更多......
+评估入选机构名册
+拍卖入选机构名册
+鉴定入选机构名册
+信用担保公司名册
+知识产权鉴定机构名册
+暂停摇号机构
+参阅案例
+民事参阅案例
+商事参阅案例
+知识产权参阅案例
+刑事参阅案例
+行政参阅案例
+执行参阅案例
+国家赔偿参阅案例
+诉讼服务
+网上立案
+案件查询
+网上阅卷
+法院指引
+诉讼指南
+文书样式
+诉讼工具
+营商环境
+数说审判
+全市各法院全年案件统计
+全市各法院当天案件统计
+全市全年案件分类统计
+全市法院全年文书统计
+视说诉讼
+直播预告
+庭审直击
+会议直击
+法官风采
+法院视记
+普法视点
+法制视频
+法苑故视
+首页-裁判文书
+裁判文书
+裁判文书
+开庭公告
+减刑假释类公示
+其他
+全站检索
+裁判文书 裁判文书公开的技术处理标准 | 裁判文书公开信息的查询方法 | 裁判文书的公开范围
+全部
+民事
+刑事
+行政
+执行
+赔偿
+知识产权
+搜索 精确查找
+当事人
+文书名称
+案由
+案号
+审理法院
+全部 北京高院 一中院 二中院 三中院 四中院 知产 互联网院 东城法院 西城法院
+朝阳法院 海淀法院 丰台法院 石景山法院 门头沟法院 房山法院 通州法院 大兴法院 顺义法院
+昌平法院 怀柔法院 平谷法院 密云法院 延庆法院 铁路法院
+生效年份
+全部 2018 2017 2016 2015 2014 2013
+裁判日期 至
+文书类型
+全部 判决书 裁定书 调解书 决定书 通知书 批复 答复 函 令
+关键词：
+离婚
+机动车交通事故责任纠纷
+供热供暖
+物业纠纷
+劳动争议
+买卖合同
+民间借贷
+信用卡纠纷
+金融借款
+银行借款
+热门文书
+梁信等上诉著作权权属、侵...
+梁信等著作权权属、侵权纠纷二审民事判决书
+查看>>
+中央芭蕾舞团与梁信著作权...
+中央芭蕾舞团著作权权属、侵权纠纷申诉、申请民事裁定...
+查看>>
+梁信诉中央芭蕾舞团著作权...
+梁信与中央芭蕾舞团著作权权属、侵权纠纷一审民事判决...
+查看>>
+北京三辰商贸有限责任公司...
+北京三辰商贸有限责任公司诉高宝立劳动争议一案一审民...
+查看>>
+杨利诉北京三辰商贸有限责...
+杨利诉北京三辰商贸有限责任公司劳动争议一案一审民事...
+查看>>
+浏览排行
+全市各法院全年文书公开统计
+收录总量（篇）
+1638694
+今日新增（篇）
+2135
+访问总量（次）
+238590055
+2019年01月01日至2019年09月05日 ，全市法院公开文书305384例。其中朝阳法院公开39032例，居全市法院公开数之首。
+$(document).ready(function(){ $('input, textarea').placeholder(); var ticks4=eval(['高院','一中院','二中院','三中院','四中院','知产院','东城','西城','朝阳','海淀','丰台','石景山','门头沟','房山','通州','大兴','顺义','昌平','怀柔','平谷','密云','延庆','互联']); var line4=eval([11765,13202,16192,16331,2417,11762,16734,26326,39032,28696,15213,15403,2944,20092,13421,12645,9325,12195,4388,5156,4144,5767,2234]); var options4 = { animate: !$.jqplot.use_excanvas, seriesDefaults: { renderer:$.jqplot.BarRenderer, pointLabels: { show: false }, rendererOptions: { barPadding: 0, // number of pixels between adjacent bars in the same barMargin: 10, // number of pixels between adjacent groups of bars. barDirection: 'vertical', // vertical or horizontal. barWidth: null // width of the bars. null to calculate automatically. } }, axesDefaults: { pad:1.2, min:0 }, axes: { xaxis: { renderer: $.jqplot.CategoryAxisRenderer, ticks: ticks4, tickOptions:{ showMark: false, fontSize:11 } }, yaxis:{ tickOptions:{ showMark:false }, showTicks: false } }, grid:{ drawGridlines:false, drawBorder:true, shadow:false, borderWidth:1, backgroundColor: "#f9f7f8" }, highlighter: { show:true, showMarker:false, sizeAdjust: -7, tooltipLocation: 'n', tooltipAxes: 'y', tooltipFormatString: '<b><span style="color:#4b89dc;font-size:16px;">%d</span></b>', useAxesFormatters: false }, series:[{color:"#4ec6f8"},{color:"#4d6bab"}] }; var plot7 = $.jqplot('chart7', [line4], options4); });
+您搜到了11条符合条件的文书
+史俊稳与北京吉天仪器有限公司职务发明创造发明人、设计人奖励、报酬纠纷一审民事判决书 北京知识产权法院 2019-09-06
+金锁庆与中核集团北京化工冶金研究院职务发明创造发明人、设计人奖励、报酬纠纷一审民事裁定书 北京知识产权法院 2016-12-30
+魏庆福等职务发明创造发明人、设计人奖励、报酬纠纷审判监督民事判决书 北京市高级人民法院 2016-11-10
+魏庆福等与航天信息股份有限公司职务发明创造发明人、设计人奖励、报酬纠纷二审民事判决书 北京市高级人民法院 2016-11-03
+王春光职务发明创造发明人、设计人奖励、报酬纠纷申诉、申请民事裁定书 北京市高级人民法院 2016-09-01
+王春光职务发明创造发明人、设计人奖励、报酬纠纷申诉、申请民事裁定书 北京市高级人民法院 2016-09-01
+王春光与沃尔新（北京）自动设备有限公司职务发明创造发明人、设计人奖励、报酬纠纷二审民事判决... 北京知识产权法院 2015-12-08
+王曙光与基点认知技术（北京）有限公司职务发明创造发明人、设计人奖励、报酬纠纷一审民事判决书 北京市第三中级人民法院 2015-03-10
+北京华夏聚龙自动化股份公司与张志利职务发明创造发明人、设计人奖励、报酬纠纷二审民事判决书 北京市高级人民法院 2014-12-26
+张志利与北京华夏聚龙自动化股份公司职务发明创造发明人、设计人奖励、报酬纠纷一审民事判决书 北京市第二中级人民法院 2014-09-24
+王曙光与基点认知技术（北京）有限公司职务发明创造发明人、设计人奖励、报酬纠纷一审民事裁定书 北京市朝阳区人民法院 2014-06-05
+友情链接 ： 最高人民法院网 中国裁判文书网 中国法院网 新华网 人民网 光明网 法制网 正义网
+北京市高级人民法院版权所有
+地址 ： 北京市朝阳区建国门南大街10号 技术服务
+京ICP备13053290号 京公网安备11010502025090
+$(document).ready(function(){ $(".date_input").datepicker({}); if(typeof document.body.style.maxHeight=="undefined"){ $(".sp_login_btn,.sp_count,.a_login ,.a_logo,.header_b,.main_nav .first_item a,.dl_left_nav dt ,.dl_left_nav dd span,.dl_left_nav dd a,.sp_mousedown,.search_all_btn,.shadow").addClass("png_bg"); } //sp_login_btn $(".header_info .sp_login_btn").hover(function(){ $(this).addClass("sp_login_btn_hover"); },function (){ $(this).removeClass("sp_login_btn_hover"); }); }); $("#search_menu").addSelect({ triggerEleId:"sp_mousedown", searchContentContain:".search_con_nav", addHoverClass:"dd_hover", getValueClass:".sp_gain_value" }); $("#search_menu_index").addSelect({ triggerEleId:"sp_mousedown_index", searchContentContain:".search_con_nav", addHoverClass:"dd_hover", getValueClass:".sp_gain_value" }); $("#bg_search").addFocus({ textContent : "输入关键词搜索", defaultColor : "#ababab", textColor : "#333", whetherAddClass : false, newClass : "" });
+请扫描二维码下载 （支持android2.3及以上版本，ios版本正在研发，敬请期待）
+移动诉讼服务
+移动诉讼服务为公众提供了法院要闻、公告发布、诉讼指南、法院导航、诉讼工具等五项服务。
+移动案件查询
+移动案件查询为北京法院涉案当事人提供案件进展查询服务，登陆后可及时接收案件进展通知和电子送达文书信息。
+$(function(){ layerDialogPage(); var status = null; $(".addQRCodebtn").mouseenter(function(){ var that = this; status = setTimeout(function(){ $(that).trigger("click"); }, 1000); }).mouseleave(function(){ clearTimeout(status); }); /* $(".qrcode_area").mouseleave(function(){ $("#cancelAddQRCodeDialog").trigger("click"); }); */ });

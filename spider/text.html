@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>北京法院审判信息网-文书详情</title>
+<link rel="stylesheet" type="text/css" href="/pub/blueskin/css/reset.css;jsessionid=BC5982821038B68D7C803B23C58978F1" media="all" />
+		<link rel="stylesheet" type="text/css" href="/pub/blueskin/css/global.css;jsessionid=BC5982821038B68D7C803B23C58978F1" media="all" />
+		<link rel="stylesheet" type="text/css" href="/pub/blueskin/css/common.css;jsessionid=BC5982821038B68D7C803B23C58978F1" media="all" />
+		<link rel="stylesheet" type="text/css" href="/pub/blueskin/css/mainnav.css;jsessionid=BC5982821038B68D7C803B23C58978F1" media="all" />
+		<link type="text/css" rel="stylesheet" href="/pub/blueskin/css/QRCode.css;jsessionid=BC5982821038B68D7C803B23C58978F1" />
+		<link type="text/css" rel="stylesheet" href="/jq/jquery-ui/jquery-ui-1.9.2.custom.css;jsessionid=BC5982821038B68D7C803B23C58978F1" />
+        <link type="text/css" rel="stylesheet" href="/pub/blueskin/css/ui_date_plugin.css;jsessionid=BC5982821038B68D7C803B23C58978F1" />
+    <script type="text/javascript">
+    var contextPath = "";
+</script>
+<script type="text/javascript" src="/jq/jquery-1.8.3.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script type="text/javascript" src="/jq/smartpaginator/jquery.pagination.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script type="text/javascript" src="/pub/comm.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script><style type="text/css">
+.Section1 a :hover {
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+	<div class="contain">
+		<!-- 右侧工具栏  首页不显示-->
+<div class="fixed_service" style="width: 236px;">
+	<ul class="ul_fixed">
+		<li class="casLogin-rigth" attr-type="1" style="margin-right: -195px;"><span
+			class="sp_arrow"> <a
+				href="javascript:void(0);" class="a_judge "><span
+					class="sp_icon rightTool_hlwfy" >北京互联网法院电子诉讼平台</span></a>
+		</span></li>
+		<li class="casLogin-rigth" attr-type="2" style="margin-right: -153px;"><span
+			class="sp_arrow"> <a
+				href="javascript:void(0);" class="a_judge "><span
+					class="sp_icon rightTool_bjfy" >北京法院电子诉讼平台</span></a>
+		</span></li>
+		<li class="first"><span class="sp_arrow"> <a
+				href="/feedback/my/contact.htm;jsessionid=BC5982821038B68D7C803B23C58978F1" class="a_person"
+				target="_blank"><span class="sp_icon">法官</span></a> <a
+				href="/feedback/my/advisory.htm;jsessionid=BC5982821038B68D7C803B23C58978F1" target="_blank">咨询</a>
+				<a href="/feedback/my/complaint.htm;jsessionid=BC5982821038B68D7C803B23C58978F1" class="a_last"
+				target="_blank">投诉</a>
+		</span></li>
+		<li><span class="sp_arrow"> <a
+				href="/pro/fwpj/fwpjlst.htm;jsessionid=BC5982821038B68D7C803B23C58978F1" class="a_judge "
+				target="_blank"><span class="sp_icon">个人评价</span></a>
+		</span></li>
+		<li><span class="sp_arrow"> <a
+				href="/pub/question/questions.htm;jsessionid=BC5982821038B68D7C803B23C58978F1" class="a_judge "
+				target="_blank"><span class="sp_icon">常见问题</span></a>
+		</span></li>
+		</ul>
+	<!-- ul_fixed end -->
+</div>
+<script>
+function strFm(str){
+	var p = new Promise(function(resolve,reject){
+		var cc = JSON.parse(str);
+			resolve(cc);
+	//       reject(JSON.parse(str));
+	});
+	return p;
+}
+$('.casLogin-rigth').click(function(){
+	debugger
+	var type = $(this).attr("attr-type");
+	$.post(contextPath + "/home/hlwfy.htm",{
+		type : type
+	}, function(data){
+		strFm(data).then(function(dataJson){
+			if(dataJson.code == 200){
+				window.open(dataJson.message);
+			} else {
+				alert("跳转失败，请重试！");
+			}
+		}).catch(function(err){
+			window.open(contextPath + "/login/pro.htm");
+		})
+
+	});
+});
+</script><div class="header">
+    <div class="header_t">
+        <div class="header_in">
+            <div class="header_info">
+                  <span class="sp_login_btn">
+                        <a href='/login/pro.htm;jsessionid=BC5982821038B68D7C803B23C58978F1' class="a_login">登录</a>
+                        </span>
+                    <span class="sp_count">网站访问量：878205595</span> 
+            </div>
+            <!-- header_info end -->
+            <div class="index_logo">
+                <a href='/;jsessionid=BC5982821038B68D7C803B23C58978F1' class="a_logo"></a>
+            </div>
+            <a class="index_header_QRcode addQRCodebtn">
+            </a>            
+        </div>
+        <!-- header_in end -->
+    </div>
+    <!-- header_m end -->
+    <div class="header_b">
+        <div class="header_b_in" id="headerId">
+            <ul class="main_nav" >
+                <li class="li_item first_item"><a href='/;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">首页</a>
+                </li>
+                <li class="li_item "><a href='/fyyw/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">法院要闻</a>
+                    <div class="sub_nav_con">
+	<div class="sub_nav_con_m">
+		<div class="sub_nav_con_t">
+			<div class="layer">
+				<div class="column_sub_nav ml38">
+					<dl class="dl_03">
+						<dt>法院要闻</dt>
+						<dd>
+							<ul class="ul_news_05">
+							     <li>
+							             <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=145002877&channel=100001001">北京法院召开全市法院工作会议</a>
+                                     </li>
+							     <li>
+							             <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=115002685&channel=100001001">北京知识产权法院审结“中国喷泉著作权纠纷第一案”</a>
+                                     </li>
+							     <li>
+							             <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=110002880&channel=100001001">大兴法院通报涉特许经营典型案例并提示创业风险</a>
+                                     </li>
+							     <li>
+							             <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=105002841&channel=100001001">昌平法院通报劳争案件不诚信履约行为典型案例</a>
+                                     </li>
+							     </ul>
+							<a href="/fyyw/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100001001" class="a_dd_more">更多......</a>
+						</dd>
+					</dl>
+					<!-- dl_03 end -->
+				</div>
+				<!-- column_sub_nav end -->
+				<div class="column_sub_nav ml48">
+					<dl class="dl_03">
+						<dt>重要通知</dt>
+						<dd>
+							<ul class="ul_news_05">
+							    <li>
+                                         <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=145002826&channel=100001011">最高人民法院、最高人民检察院关于办理利用未公开信息交易刑事案件适用法律若干问题的解释</a>
+                                     </li>
+                                 <li>
+                                         <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=145002825&channel=100001011">最高人民法院、最高人民检察院关于办理操纵证券、期货市场刑事案件适用法律若干问题的解释</a>
+                                     </li>
+                                 <li>
+                                         <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=145002823&channel=100001011">最高人民法院关于审理生态环境损害赔偿案件的若干规定（试行）</a>
+                                     </li>
+                                 <li>
+                                         <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=140003499&channel=100001011">最高人民法院关于适用《中华人民共和国公司法》若干问题的规定（五）</a>
+                                     </li>
+                                 </ul>
+							<a href="/fyyw/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100001011" class="a_dd_more">更多......</a>
+						</dd>
+					</dl>
+					<!-- dl_03 end -->
+				</div>
+				<!-- column_sub_nav end -->
+				<div class="column_sub_nav ml48">
+					<dl class="dl_03">
+						<dt>法院工作报告</dt>
+						<dd>
+							<ul class="ul_news_05">
+								<li>
+                                         <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=145002835&channel=100001012">北京市高级人民法院2018年工作报告</a>
+                                     </li>
+                                 <li>
+                                         <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=100002867&channel=100001012">北京市高级人民法院2017年工作报告</a>
+                                     </li>
+                                 <li>
+                                         <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=55003465&channel=100001012">北京市高级人民法院2016年工作报告</a>
+                                     </li>
+                                 <li>
+                                         <a href="/article/newsDetail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?NId=55001802&channel=100001012">北京市高级人民法院2015年工作报告</a>
+                                     </li>
+                                 </ul>
+							<a href="/fyyw/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100001012" class="a_dd_more">更多......</a>
+						</dd>
+					</dl>
+					<!-- dl_03 end -->
+				</div>
+				<!-- column_sub_nav end -->
+			</div>
+			<!-- layer end -->
+		</div>
+		<!-- sub_nav_con_t end -->
+	</div>
+	<!-- sub_nav_con_m end -->
+</div>
+<!-- sub_nav_con end --></li>
+                <li class="li_item "><a href='/ktgg/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">公告公示</a>
+                    <div class="sub_nav_con"  style="display:;">
+    <div class="sub_nav_con_m">
+           <div class="sub_nav_con_t">
+                    <div class="layer p5_0_0_10">
+                        <ul class="ul_link_03">
+                               <li>
+                                     <a href="/ktgg/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1" class="a_btn_01">
+                                          <span class="sp_r">
+                                                <span class="sp_m">
+                                                      <span class="sp_arrow">开庭公告</span>
+                                                </span>
+                                            </span>
+                                      </a>
+                                </li>
+                                 <li>
+                                        <a href="/fygg/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100002004"  class="a_btn_01">
+                                            <span class="sp_r">
+                                                  <span class="sp_m">
+                                                       <span class="sp_arrow">鉴拍公告</span>
+                                                  </span>
+                                             </span>
+                                         </a>
+                                   </li>
+                                   <li>
+                                         <a href="/fygg/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100002005"  class="a_btn_01">
+                                              <span class="sp_r">
+                                                     <span class="sp_m">
+                                                          <span class="sp_arrow">拍卖公告</span>
+                                                     </span>
+                                               </span>
+                                          </a>
+                                   </li>
+                                    <li>
+                                          <a href="/fygg/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100002006"  class="a_btn_01">
+                                                 <span class="sp_r">
+                                                      <span class="sp_m">
+                                                            <span class="sp_arrow">变卖公告</span>
+                                                      </span>
+                                                 </span>
+                                           </a>
+                                    </li>
+                                    <li>
+                                            <a href="/fygg/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100002007"  class="a_btn_01">
+                                                   <span class="sp_r">
+                                                        <span class="sp_m">
+                                                                <span class="sp_arrow">破产管理人</span>
+                                                         </span>
+                                                    </span>
+                                              </a>
+                                       </li>
+                                        <li>
+                                             <a href="/fygg/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100002009"  class="a_btn_01">
+                                                        <span class="sp_r">
+                                                            <span class="sp_m">
+                                                                <span class="sp_arrow">悬赏公告</span>
+                                                            </span>
+                                                        </span>                                                     
+                                              </a>
+                                          </li>
+                                           <li>
+                                                    <a href="/fygg/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100002008"  class="a_btn_01">
+                                                        <span class="sp_r">
+                                                            <span class="sp_m">
+                                                                <span class="sp_arrow">其他公告</span>
+                                                            </span>
+                                                        </span>     
+                                                    </a>
+                                            </li>
+                                            <li>
+                                                 <a href="/bggs/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1"  class="a_btn_01">
+                                                        <span class="sp_r">
+                                                            <span class="sp_m">
+                                                                <span class="sp_arrow">减刑假释类公示</span>
+                                                            </span>
+                                                        </span>     
+                                                    </a>
+                                            </li>
+                                      </ul>
+                                      <!-- ul_link_03 end -->
+                               </div>
+                               <!-- layer end -->
+                      </div>
+                      <!-- sub_nav_con_t end -->
+          </div>
+          <!-- sub_nav_con_m end -->
+ </div>  
+<!-- sub_nav_con end --></li>
+                <li class="li_item li_item_on"><a href='/cpws/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">裁判文书</a>
+                     <div class="sub_nav_con"  style="display:;" id='sub_nav_writ'>
+             <div class="sub_nav_con_m">
+                            <div class="sub_nav_con_t">
+                                        <div class="layer p25_0_0_28">
+                                            <div class="grid_layout_600 fl">
+                                            <form id="navSearchForm" name="navSearchForm" action="/cpws/index.htm" target="_blank">
+                                                <span class="sp_ipt_wrap m0_0_24_40">
+                                                    <label for="">案由</label>
+                                                    <input type="text" name="ay"  value="" />
+                                                </span>
+                                                <span class="sp_ipt_date_wrap m0_0_24_40">
+                                                    <label for="">生效日期</label>
+                                                    <input type="text" name="startCprq"  id="navStartCprq" value="" class="date_input" />
+                                                    <span> 至</span>
+                                                    <input type="text" name="endCprq"  id="navEndCprq" value="" class="date_input"  />
+                                                </span>
+                                                <span class="sp_ipt_wrap m0_0_24_40">
+                                                    <label for="">案号</label>
+                                                    <input type="text" name="ah"  value="" />
+                                                </span>
+                                                <a href="javascript:void(0);" class="a_search_btn m0_0_24_40" id="navSearchSubmitButton">搜&nbsp;索</a>
+                                                                                                <span class="sp_ipt_blank_wrap m0_0_24_40">
+                                                </span>
+                                                <span class="sp_ipt_blank_wrap m0_0_24_40" id="navCpwsTips">
+                                                </span>
+                                                </form>
+                                            </div>
+                                            <!-- grid_layout_600 end  -->
+                                            <div class="grid_layout_300  fl">
+                                                <div class="layer pb20">
+                                                    <a href="/cpws/explain.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100019003" class="a_btn_01">
+                                                        <span class="sp_r">
+                                                            <span class="sp_m">
+                                                                <span class="sp_arrow  grid_layout_210" >裁判文书公开的技术处理标准</span>
+                                                            </span>
+                                                        </span>                                                     
+                                                    </a>    
+                                                </div>
+                                                 <!-- layer end  -->
+                                                <div class="layer pb20">
+                                                    <a href="/cpws/explain.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100019006" class="a_btn_01">
+                                                        <span class="sp_r">
+                                                            <span class="sp_m">
+                                                                <span class="sp_arrow grid_layout_210" >裁判文书公开信息的查询方法</span>
+                                                            </span>
+                                                        </span>     
+                                                    </a>
+                                                </div>  
+                                                 <!-- layer end  -->
+                                                <div class="layer">
+                                                    <a href="/cpws/explain.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100019002" class="a_btn_01 ">
+                                                        <span class="sp_r">
+                                                            <span class="sp_m">
+                                                                <span class="sp_arrow grid_layout_210">裁判文书的公开范围</span>
+                                                            </span>
+                                                        </span>     
+                                                    </a>
+                                                </div>
+                                                <!-- layer end -->
+                                                
+                                            </div>
+                                            <!-- grid_layout_300 end -->                            
+                                        </div>
+                                        <!-- layer end -->
+                                    </div>
+                                    <!-- sub_nav_con_t end -->
+                                </div>
+                                <!-- sub_nav_con_m end -->
+</div>  
+ <!-- sub_nav_con end -->
+ <script type="text/javascript">
+ $("#navSearchSubmitButton").click(function(e){
+     /* 日期正则表达式 */
+    var datePat = /^(19[7-9]\d|20\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[1-2]\d|3[0-1])$/;
+     e.preventDefault();
+     $("#navCpwsTips").html();
+     var startCprq = $("#navStartCprq").val();
+     var endCprq = $("#navEndCprq").val();
+     if (startCprq.length>0 &&!datePat.test(startCprq)) {
+       $("#navCpwsTips").html("生效日期的起始日期格式错误：格式为yyyy-MM-dd，范围为[1970-01-01 ~ 2099-12-31]。");
+       return;
+     }
+     if (endCprq.length>0 &&!datePat.test(endCprq)) {
+       $("#navCpwsTips").html("生效日期的截止日期格式错误：格式为yyyy-MM-dd，范围为[1970-01-01 ~ 2099-12-31]。");
+       return;
+     }
+     if (endCprq.length>0 && startCprq.length>0 &&startCprq.localeCompare(endCprq) == 1) {
+       $("#navCpwsTips").html("生效日期的起始日期不能大于截止日期。");
+       return;
+     }
+     $("#navSearchForm").submit();
+ });
+ </script></li>
+                <li class="li_item "><a href='/splc/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">审判流程</a>
+                     <div class="sub_nav_con"  style="display:;">
+    <div class="sub_nav_con_m">
+          <div class="sub_nav_con_t">
+             <div class="layer pl28">
+                   <div class="grid_layout_600 fl">
+                           <div class="grid_layout_265 fl">
+                                     <dl class="dl_03">
+                                                <dt>北京法院指导文件 </dt>
+                                                        <dd>
+                                                            <table class="table_layout_01">
+                                                                <tr>
+                                                                    <td class="td_01">
+                                                                        <ul class="ul_news_05">
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014001">民事审判业务规范 </a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014002">商事审判业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014003">知识产权审判业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014004">刑事审判业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014009">审判管理</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="ul_news_05">
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014005">行政审判业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014006">执行业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014007">国家赔偿业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100014008">未成年审判业务规范</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </dd>
+                                                    </dl>
+                                                    <!-- dl_03 end -->
+                                                </div>
+                                                <!-- grid_layout_265 end -->
+                                                <div class="grid_layout_265 fl ml48">
+                                                    <dl class="dl_03">
+                                                        <dt>最高法院指导文件 </dt>
+                                                        <dd>
+                                                            <table class="table_layout_01">
+                                                                <tr>
+                                                                    <td  class="td_01">
+                                                                        <ul class="ul_news_05">
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021001">民事审判业务规范 </a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021002">商事审判业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021003">知识产权审判业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021004">刑事审判业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021009">其他</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                    <td>
+                                                                        <ul class="ul_news_05">
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021005">行政审判业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021006">执行业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021007">国家赔偿业务规范</a></li>
+                                                                            <li><a href="/splc/wjindex.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100021008">未成年审判业务规范</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </dd>
+                                                    </dl>
+                                                    <!-- dl_03 end -->
+                                                </div>
+                                                <!-- grid_layout_265 end -->
+                                            </div>
+                                            <!-- grid_layout_600 end  -->
+                                            <div class="grid_layout_250  fl ml60">
+                                                <div class="layer pt40">
+                                                    <a href="/splc/explain.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100019001" class="a_btn_01">
+                                                        <span class="sp_r">
+                                                            <span class="sp_m">
+                                                                <span class="sp_arrow  grid_layout_160" >审判流程公开范围</span>
+                                                            </span>
+                                                        </span>                                                     
+                                                    </a>    
+                                                </div>
+                                                 <!-- layer end  -->
+                                                <div class="layer pt28">
+                                                    <a href="/splc/explain.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100019005" class="a_btn_01">
+                                                        <span class="sp_r">
+                                                            <span class="sp_m">
+                                                                <span class="sp_arrow grid_layout_160" >审判流程查询方法</span>
+                                                            </span>
+                                                        </span>     
+                                                 </a>
+                                     </div>  
+                                     <!-- layer end  -->
+                             </div>
+                             <!-- grid_layout_300 end -->                            
+                     </div>
+                     <!-- layer end -->
+            </div>
+           <!-- sub_nav_con_t end -->
+       </div>
+       <!-- sub_nav_con_m end -->
+</div>  
+<!-- sub_nav_con end -->    </li>
+                <li class="li_item ">
+                	<a href='/zxxx/indexOld.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?zxxxlx=100013001'class="a_li_item">执行信息</a> 
+                     <link rel="stylesheet" type="text/css" href="/pub/blueskin/css/zxxx.css;jsessionid=BC5982821038B68D7C803B23C58978F1" media="all" />
+  <div class="sub_nav_con"  style="display:;">
+        <div class="sub_nav_con_m">
+            <div class="sub_nav_con_t">
+                <div class="layer p20_0_0_28">
+                    <div class="grid_layout_600 fl">
+                        <form id="navZxxxSearchForm" name="navZxxxSearchForm" action="/zxxx/indexOld.htm" target="_blank">
+	                        <span class="sp_ipt_wrap_ajxxlx m0_0_24_40" id="ajxxlxSearch">
+	                            <label for="">信息类型</label>
+	                            <span class="ajxxlxTarget" id="ajxxlxTarget">失信</span>
+	                            <input type="hidden" name="ajxxlx" id="ajxxlx_value" value="1" />
+	                            <span class="sp_mousedown_ajxxlx" id="sp_mousedown_ajxxlx">&nbsp;</span>
+	                            <dl class="search_con_nav" id="search_con_nav_ajxxlx">
+                                    <dd value="1">失信</dd>
+                                    <dd value="2">终本</dd>
+                                </dl>
+	                        </span>
+	                        <span class="sp_ipt_wrap_zxxxzl m0_0_24_40" id="zxxxzlSearch">
+	                            <label for="">失信范围</label>
+	                            <span class="zxxxzlTarget" id="zxxxzlTarget">失信被执行人</span>
+	                            <input type="hidden" name="zxxxlx" id="zxxxzl_value" value="100013001" />
+	                            <span class="sp_mousedown_zxxxzl" id="sp_mousedown_zxxxzl">&nbsp;</span>
+	                            <dl class="search_con_nav" id="search_con_nav_header">
+                                    <dd value="100013001">失信被执行人</dd>
+                                    <dd value="100013002">限制出境被执行人</dd>
+                                    <dd value="100013004">限制高消费被执行人</dd>
+                                    <dd value="100013003">限制招投标被执行人</dd>
+                                </dl>
+	                        </span>
+	                        <span class="sp_ipt_wrap_plus_bzxrzl m0_0_24_40" id="bzxrzlSearch">
+	                            <label for="" class="bzxrzl_lable">全部</label>
+	                            <span class="sp_mousedown_bzxrzl" id="sp_mousedown_bzxrzl">&nbsp;</span>
+	                            <input type="text" name="bzxrxm"  value="" />
+	                            <input type="hidden" name="bzxrlx" id="bzxrzl_value"  value="" />
+	                            <dl class="search_con_nav" id="search_con_nav_bzxrzl">
+	                                <dd value="">全部</dd>
+	                                <dd value="1">自然人</dd>
+	                                <dd value="2,3">法人或其他组织</dd>
+	                            </dl>
+	                            <!-- search_con_nav end -->
+	                        </span>
+	                        <span class="sp_ipt_wrap m0_0_24_40">
+                                <label for="">案号</label>
+                                <input type="text" name="ah"  value="" />
+                            </span>
+                        </form>
+                        <a href="javascript:void(0);" id="zxxx_header_submit" class="a_search_btn m0_0_24_40" style="float:right;position:relative;left:-88px;">搜&nbsp;索</a>
+                    </div>
+                    <!-- grid_layout_600 end  -->
+                    <div class="grid_layout_300  fl ml15">
+                        <div class="layer pb20">
+                            <a href="/zxxx/detailed.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100019007&zxxxlx=100013001" class="a_btn_01">
+                                <span class="sp_r">
+                                    <span class="sp_m">
+                                        <span class="sp_arrow  grid_layout_210" >执行信息公开信息的查询方法</span>
+                                    </span>
+                                </span>                                                     
+                            </a>    
+                        </div>
+                         <!-- layer end  -->
+                        <div class="layer ">
+                            <a href="/zxxx/detailed.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100019004&zxxxlx=100013001" class="a_btn_01">
+                                <span class="sp_r">
+                                    <span class="sp_m">
+                                        <span class="sp_arrow grid_layout_210" >执行信息的公开范围</span>
+                                    </span>
+                                </span>     
+                            </a>
+                        </div>  
+                         <!-- layer end  -->    
+                    </div>
+                    <!-- grid_layout_300 end -->                            
+                </div>
+                <!-- layer end -->
+            </div>
+            <!-- sub_nav_con_t end -->
+        </div>
+        <!-- sub_nav_con_m end -->
+    </div>  
+<!-- sub_nav_con end -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#ajxxlxSearch").addSelect({
+        triggerEleId:"sp_mousedown_ajxxlx",
+        searchContentContain:".search_con_nav", 
+        addHoverClass:"dd_hover",
+        getValueClass:".ajxxlxTarget"
+    });
+    $("#bzxrzlSearch").addSelect({
+        triggerEleId:"sp_mousedown_bzxrzl",
+        searchContentContain:".search_con_nav", 
+        addHoverClass:"dd_hover",
+        getValueClass:".bzxrzl_lable"
+    });
+    $("#zxxxzlSearch").addSelect({
+        triggerEleId:"sp_mousedown_zxxxzl",
+        searchContentContain:".search_con_nav", 
+        addHoverClass:"dd_hover",
+        getValueClass:".zxxxzlTarget"
+    });
+    $("#search_con_nav_bzxrzl").children("dd").each(function() {
+        $(this).click(function() {
+            $("#bzxrzl_value").attr("value",$(this).attr("value"));
+        });
+    });
+    $("#search_con_nav_header").children("dd").each(function() {
+        $(this).click(function() {
+            $("#zxxxzl_value").attr("value",$(this).attr("value"));
+        });
+    });
+    $("#search_con_nav_ajxxlx").children("dd").each(function() {
+        $(this).click(function() {
+            $("#ajxxlx_value").attr("value",$(this).attr("value"));
+            if($("#ajxxlx_value").val()==2){
+            	$("#zxxxzlTarget").text("");
+            	$("#sp_mousedown_zxxxzl").hide();
+            	$("#zxxxzl_value").val("100013006");
+            }
+            if($("#ajxxlx_value").val()==1){
+            	$("#zxxxzlTarget").text("失信被执行人");
+            	$("#sp_mousedown_zxxxzl").show();
+            }
+        });
+    });
+    $("#zxxx_header_submit").click(function(e){
+    	if(document.getElementById("zxxxzl_value").value!=100013001){
+    		document.navZxxxSearchForm.action="/zxxx/indexOld.htm";
+    	}
+        e.preventDefault();
+        $("#navZxxxSearchForm").submit();
+    })
+});
+
+</script></li>
+                <li class="li_item "><a href='/fgxx/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">法官信息</a>
+                    <div class="sub_nav_con"  style="display:;">
+                                <div class="sub_nav_con_m">
+                                    <div class="sub_nav_con_t">
+                                        <div class="layer p15_0_0_28">
+                                            <div class="grid_layout_135 fl pt15 posr999">
+                                                <a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=1&channel=100017002" class="a_btn_v_01  ml25">
+                                                    <span class="sp_t">
+                                                        <span class="sp_b">
+                                                            <span class="sp_m">
+                                                         北京市高级人民法院
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </a>    
+                                                <span class="sp_btn_v_01_arrow"></span>
+                                            </div>
+                                            <!-- grid_layout_135 end  -->
+                                            <div class="grid_layout_780 fl ">
+                                                <div class="grid_layout_170 fl">
+                                                    <dl class="dl_03">
+                                                        <dt><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=2&channel=100036002">北京市第一中级人民法院</a> </dt>
+                                                        <dd>
+                                                            <ul class="ul_news_05">
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=6&channel=100126002"> 北京市海淀区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=5&channel=100096002">北京市石景山区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=7&channel=100156002">北京市门头沟区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=9&channel=100216002">北京市昌平区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=11&channel=100276002">北京市延庆区人民法院</a></li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <!-- dl_03 end -->
+                                                </div>
+                                                <!-- grid_layout_170 end -->
+                                                <div class="grid_layout_170 fl ml30">
+                                                    <dl class="dl_03">
+                                                        <dt><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=12&channel=100306002">北京市第二中级人民法院</a></dt>
+                                                        <dd>
+                                                            <ul class="ul_news_05">
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=13&channel=100336002">北京市东城区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=3&channel=100066002">北京市西城区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=16&channel=100396002">北京市丰台区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=8&channel=100186002">北京市房山区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=10&channel=100246002">北京市大兴区人民法院</a></li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <!-- dl_03 end -->
+                                                </div>
+                                                <!-- grid_layout_170 end -->
+                                                <div class="grid_layout_170 fl ml30">
+                                                    <dl class="dl_03">
+                                                        <dt><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=29&channel=100636002">北京市第三中级人民法院</a></dt>
+                                                        <dd>
+                                                            <ul class="ul_news_05">
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=15&channel=100366002">北京市朝阳区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=18&channel=100456002">北京市通州区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=17&channel=100426002">北京市顺义区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=20&channel=100516002">北京市怀柔区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=19&channel=100486002">北京市平谷区人民法院</a></li>
+                                                                <li><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=21&channel=100546002">北京市密云区人民法院</a></li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <!-- dl_03 end -->
+                                                </div>
+                                                
+                                                <div class="grid_layout_170 fl ml30">
+                                                    <dl class="dl_03">
+                                                        <dt><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=22&channel=100576002">北京市第四中级人民法院</a></dt>
+                                                        <dd>
+                                                            <ul class="ul_news_05">
+                                                                <li><a href="/fgxx/detail.htm?court=32&channel=100576002">北京互联网法院</a></li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <!-- dl_03 end -->
+                                                </div>
+                                                <!-- grid_layout_170 end -->
+                                                
+                                                 <div class="grid_layout_170 fl ml30">
+                                                    <dl class="dl_03">
+                                                        <dt><a href="/fgxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=30&channel=100576002">北京知识产权法院</a></dt>
+                                                        <dd>
+                                                            <ul class="ul_news_05">
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <!-- dl_03 end -->
+                                                </div>
+                                                <!-- grid_layout_170 end -->
+                                                
+                                               
+                                                
+                                            </div>
+                                            <!-- grid_layout_780 end -->                            
+                                        </div>
+                                        <!-- layer end -->
+                                    </div>
+                                    <!-- sub_nav_con_t end -->
+                                </div>
+                                <!-- sub_nav_con_m end -->
+                            </div>  
+                    <!-- sub_nav_con end -->    </li>
+                <li class="li_item  "><a href='/mcxx/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">名册信息</a>
+                   <div class="sub_nav_con"  style="display:;">
+    <div class="sub_nav_con_m">
+        <div class="sub_nav_con_t">
+            <div class="layer pl35">
+                <div class="grid_layout_550 fl">
+                    <div class="grid_layout_230 fl">
+                        <dl class="dl_03">
+                            <dt><a href="/mcxx/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=001">人民陪审员名册</a> </dt>
+                            <dd>
+                                <ul class="ul_news_05">
+                                    <li><a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=2&channel=100038001&current=001">北京市第一中级人民法院人民陪审员名册 </a></li>
+                                    <li><a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=12&channel=100308001&current=001">北京市第二中级人民法院人民陪审员名册</a></li>
+                                    <li><a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=29&channel=100638001&current=001">北京市第三中级人民法院人民陪审员名册</a></li>
+                                    <li><a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=13&channel=100338001&current=001">北京市东城区人民法院人民陪审员名册</a></li>
+                                </ul>
+                                <a href="/mcxx/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=001" class="a_dd_more">更多......</a>
+                            </dd>
+                        </dl>
+                        <!-- dl_03 end -->
+                    </div>
+                    <!-- grid_layout_265 end -->
+                    <div class="grid_layout_230 fl ml60">
+                        <dl class="dl_03">
+                            <dt><a href="/mcxx/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=002">特邀调解组织和特邀调解员名册</a></dt>
+                            <dd>
+                                <ul class="ul_news_05">
+                                	<li><a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=1&channel=100012002&current=002">北京市高级人民法院特邀调解组织和特邀调解员名册 </a></li>
+                                    <li><a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=2&channel=100038002&current=002">北京市第一中级人民法院特邀调解组织和特邀调解员名册 </a></li>
+                                    <li><a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=12&channel=100308002&current=002">北京市第二中级人民法院特邀调解组织和特邀调解员名册</a></li>
+                                    <li><a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?court=29&channel=100638002&current=002">北京市第三中级人民法院特邀调解组织和特邀调解员名册</a></li>             
+                                </ul>
+                                <a href="/mcxx/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=002" class="a_dd_more">更多......</a> 
+                            </dd>
+                        </dl>
+                        <!-- dl_03 end -->
+                    </div>
+                    <!-- grid_layout_265 end -->
+                </div>
+                <!-- grid_layout_600 end  -->
+                <div class="grid_layout_300  fl ml80">
+                    <div class="layer pt20">
+                        <a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?channel=100012003" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow  grid_layout_210" >评估入选机构名册</span>
+                                </span>
+                            </span>                                                     
+                        </a>    
+                    </div>
+                     <!-- layer end  -->
+                    <div class="layer pt20">
+                        <a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?channel=100012004" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow grid_layout_210" >拍卖入选机构名册</span>
+                                </span>
+                            </span>     
+                        </a>
+                    </div>  
+                     <!-- layer end  -->
+                    <div class="layer pt20">
+                        <a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?channel=100012005" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow grid_layout_210" >鉴定入选机构名册</span>
+                                </span>
+                            </span>     
+                        </a>
+                    </div>  
+                     <!-- layer end  -->
+                    <div class="layer pt20">
+                        <a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?channel=100012006" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow grid_layout_210" >信用担保公司名册</span>
+                                </span>
+                            </span>     
+                        </a>
+                    </div>  
+                     <!-- layer end  -->
+                     <div class="layer pt20">
+                        <a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?channel=100012007" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow grid_layout_210" >知识产权鉴定机构名册</span>
+                                </span>
+                            </span>     
+                        </a>
+                    </div>  
+                     <!-- layer end  -->
+                     <div class="layer pt20">
+                        <a href="/mcxx/detail.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?channel=100012008" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow grid_layout_210" >暂停摇号机构</span>
+                                </span>
+                            </span>     
+                        </a>
+                    </div>  
+                     <!-- layer end  --> 
+                </div>
+                <!-- grid_layout_300 end -->                            
+            </div>
+            <!-- layer end -->
+        </div>
+        <!-- sub_nav_con_t end -->
+    </div>
+    <!-- sub_nav_con_m end -->
+</div>  
+<!-- sub_nav_con end -->        </li>
+                <li class="li_item  "><a href='/zdal/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item ">参阅案例</a>
+                    <div class="sub_nav_con"  style="display:;">
+    <div class="sub_nav_con_m">
+        <div class="sub_nav_con_t">
+            <div class="layer p5_0_0_10">
+                <ul class="ul_link_03">
+                    <li>
+                        <a href="/zdal/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100015001" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">民事参阅案例</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/zdal/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100015002"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">商事参阅案例</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/zdal/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100015003"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow  grid_layout_135" style="padding-right: 45px">知识产权参阅案例</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/zdal/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100015004"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">  刑事参阅案例</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/zdal/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100015005"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">行政参阅案例   </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/zdal/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100015006"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">执行参阅案例</span>
+                                </span>
+                            </span>                                                     
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/zdal/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?c=100015007"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow grid_layout_135" style="padding-right: 45px">国家赔偿参阅案例</span>
+                                </span>
+                            </span>     
+                        </a>
+                    </li>                               
+                </ul>
+                <!-- ul_link_03 end -->
+            </div>
+            <!-- layer end -->
+        </div>
+        <!-- sub_nav_con_t end -->
+    </div>
+    <!-- sub_nav_con_m end -->
+</div>  
+<!-- sub_nav_con end --></li>
+                <li class="li_item   "><a href='/ssfw/zggkwj.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">诉讼服务</a>
+                    <div class="sub_nav_con"  style="display:;">
+    <div class="sub_nav_con_m">
+        <div class="sub_nav_con_t">
+            <div class="layer p5_0_0_10">
+                <ul class="ul_link_03">
+                    <li>
+                        <a href="/ssfw/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">网上立案</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ssfw/ajcx.htm;jsessionid=BC5982821038B68D7C803B23C58978F1"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow"> 案件查询</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ssfw/wsyj.htm;jsessionid=BC5982821038B68D7C803B23C58978F1"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow"> 网上阅卷</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/fyzy/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow  ">法院指引 </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ssfw/sszn.htm;jsessionid=BC5982821038B68D7C803B23C58978F1"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow"> 诉讼指南</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ssfw/wsys.htm;jsessionid=BC5982821038B68D7C803B23C58978F1"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">文书样式 </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ssfw/ssgj.htm;jsessionid=BC5982821038B68D7C803B23C58978F1"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">诉讼工具  </span>
+                                </span>
+                            </span>                                                     
+                        </a>
+                    </li>  
+                    <li>
+                        <a href="/ssfw/zggkwj.htm;jsessionid=BC5982821038B68D7C803B23C58978F1"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow">营商环境  </span>
+                                </span>
+                            </span>                                                     
+                        </a>
+                    </li>                             
+                </ul>
+                <!-- ul_link_03 end -->
+            </div>
+            <!-- layer end -->
+        </div>
+        <!-- sub_nav_con_t end -->
+    </div>
+    <!-- sub_nav_con_m end -->
+</div>  
+<!-- sub_nav_con end --></li>
+                <li class="li_item   "><a href='/sssp/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1'
+                    class="a_li_item">数说审判</a>
+                     <div class="sub_nav_con"  style="display:;">
+    <div class="sub_nav_con_m">
+        <div class="sub_nav_con_t">
+            <div class="layer p5_0_0_10">
+                <ul class="ul_link_03">
+                    <li>
+                        <a href="/sssp/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?tab=0" class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow grid_layout_190">全市各法院全年案件统计</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sssp/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?tab=1"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow grid_layout_190"> 全市各法院当天案件统计</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sssp/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?tab=2"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow  grid_layout_190">  全市全年案件分类统计</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sssp/index.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?tab=3"  class="a_btn_01">
+                            <span class="sp_r">
+                                <span class="sp_m">
+                                    <span class="sp_arrow  grid_layout_190">  全市法院全年文书统计</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                                        
+                </ul>
+                <!-- ul_link_03 end -->
+            </div>
+            <!-- layer end -->
+        </div>
+        <!-- sub_nav_con_t end -->
+    </div>
+    <!-- sub_nav_con_m end -->
+</div>  
+<!-- sub_nav_con end --></li>
+                <li class="li_item last  "><a href='/tszx/vod.htm;jsessionid=BC5982821038B68D7C803B23C58978F1?ssssuri=/ssss/index/index.html'
+                    class="a_li_item">视说诉讼</a>
+                    <div class="sub_nav_con"  style="display:;">
+     <div class="sub_nav_con_m">
+            <div class="sub_nav_con_t">
+                 <div class="layer p5_0_0_10">
+                      <ul class="ul_link_03">
+                           <li>
+                                  <a href="http://www.bjcourt.gov.cn/tszx/vod.htm?ssssuri=/szbyg/index.html" class="a_btn_01">
+                                       <span class="sp_r">
+                                             <span class="sp_m">
+                                                   <span class="sp_arrow">直播预告</span>
+                                             </span>
+                                       </span>
+                                   </a>
+                               </li>
+                           <li>
+                                  <a href="http://www.bjcourt.gov.cn/tszx/vod.htm?ssssuri=/mediaIndex?menuIndex=1" class="a_btn_01">
+                                       <span class="sp_r">
+                                             <span class="sp_m">
+                                                   <span class="sp_arrow">庭审直击</span>
+                                             </span>
+                                       </span>
+                                   </a>
+                               </li>
+                           <li>
+                                  <a href="http://www.bjcourt.gov.cn/tszx/vod.htm?ssssuri=/mediaIndex?menuIndex=8a9681fb4481cfd3014481d0ccb00005&secname=%25E4%25BC%259A%25E8%25AE%25AE%25E7%259B%25B4%25E5%2587%25BB" class="a_btn_01">
+                                       <span class="sp_r">
+                                             <span class="sp_m">
+                                                   <span class="sp_arrow">会议直击</span>
+                                             </span>
+                                       </span>
+                                   </a>
+                               </li>
+                           <li>
+                                  <a href="http://www.bjcourt.gov.cn/tszx/vod.htm?ssssuri=/mediaIndex?menuIndex=8a9681fb4481cfd3014481cfd3f80000&secname=%25E6%25B3%2595%25E5%25AE%2598%25E9%25A3%258E%25E9%2587%2587" class="a_btn_01">
+                                       <span class="sp_r">
+                                             <span class="sp_m">
+                                                   <span class="sp_arrow">法官风采</span>
+                                             </span>
+                                       </span>
+                                   </a>
+                               </li>
+                           <li>
+                                  <a href="http://www.bjcourt.gov.cn/tszx/vod.htm?ssssuri=/mediaIndex?menuIndex=8a9681fb4481cfd3014481d007d90001&secname=%25E6%25B3%2595%25E9%2599%25A2%25E8%25A7%2586%25E8%25AE%25B0" class="a_btn_01">
+                                       <span class="sp_r">
+                                             <span class="sp_m">
+                                                   <span class="sp_arrow">法院视记</span>
+                                             </span>
+                                       </span>
+                                   </a>
+                               </li>
+                           <li>
+                                  <a href="http://www.bjcourt.gov.cn/tszx/vod.htm?ssssuri=/mediaIndex?menuIndex=8a9681fb4481cfd3014481d038300002&secname=%25E6%2599%25AE%25E6%25B3%2595%25E8%25A7%2586%25E7%2582%25B9" class="a_btn_01">
+                                       <span class="sp_r">
+                                             <span class="sp_m">
+                                                   <span class="sp_arrow">普法视点</span>
+                                             </span>
+                                       </span>
+                                   </a>
+                               </li>
+                           <li>
+                                  <a href="http://www.bjcourt.gov.cn/tszx/vod.htm?ssssuri=/mediaIndex?menuIndex=8a9681fb4481cfd3014481d0ccb00004&secname=%25E6%25B3%2595%25E5%2588%25B6%25E8%25A7%2586%25E9%25A2%2591" class="a_btn_01">
+                                       <span class="sp_r">
+                                             <span class="sp_m">
+                                                   <span class="sp_arrow">法制视频</span>
+                                             </span>
+                                       </span>
+                                   </a>
+                               </li>
+                           <li>
+                                  <a href="http://www.bjcourt.gov.cn/tszx/vod.htm?ssssuri=/mediaIndex?menuIndex=8a9681fb4481cfd3014481d0ab8b0003&secname=%25E6%25B3%2595%25E8%258B%2591%25E6%2595%2585%25E8%25A7%2586" class="a_btn_01">
+                                       <span class="sp_r">
+                                             <span class="sp_m">
+                                                   <span class="sp_arrow">法苑故视</span>
+                                             </span>
+                                       </span>
+                                   </a>
+                               </li>
+                           </ul>
+                     <!-- ul_link_03 end -->
+               </div>
+               <!-- layer end -->
+           </div>
+           <!-- sub_nav_con_t end -->
+     </div>
+     <!-- sub_nav_con_m end -->
+</div>  
+<!-- sub_nav_con end --></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header_b end -->
+</div>
+<!-- header end --><div class="content pt25 pb25">
+			<div class="main">
+				<div class="sub_page_hd_max">
+	<h2 class="h2_pos  fl">
+		<a href="/">首页</a><span class="sp_line">-</span><a href="/cpws/index.htm">裁判文书</a><span class="sp_line">-</span><span class="sp_curret">正文</span>
+</h2>
+	<!-- sp_pos end -->
+    <div class="search_all_box">
+	<div class="search_menu" id="search_menu">
+		<div class="search_value_box">
+			<span class="sp_gain_value">裁判文书</span>
+			<span class="sp_mousedown" style="float: left;" id="sp_mousedown"></span>
+		    <input type="hidden" id="searchType1" value="cpws" />
+		    <input type="hidden" id="searchCondtion" value="" />
+		</div>
+		<!-- search_value_box end -->
+		<dl class="search_con_nav" id="search_con_nav1">
+			<dd value="cpws">裁判文书</dd>
+			<dd value="ktgg">开庭公告</dd>
+			<dd value="bggs">减刑假释类公示</dd>
+			<dd value="other">其他</dd>
+			<dd value="totalIndex">全站检索</dd>
+		</dl>
+		<!-- search_con_nav end -->
+	</div>
+	<!-- search_menu end -->
+	<div class="search_all_wrap">
+		<input type="text" name="" id="bg_search" onkeydown="SEARCH.enterGoTo(event);" value="输入关键词搜索"
+			class="inp_search_all" onkeypress="entersearch()"/> <a href="javascript:SEARCH.search1();"
+			class="search_all_btn"></a>
+	</div>
+	<!-- search_all_wrap end -->
+</div>
+<!-- search_all_box end --></div><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css"
+	href="/login/blue/css/reset.css;jsessionid=BC5982821038B68D7C803B23C58978F1" media="all" />
+<link rel="stylesheet" type="text/css"
+	href="/cpws/blue/css/module-cpws-yf.css;jsessionid=BC5982821038B68D7C803B23C58978F1" media="all" />
+<link rel="stylesheet" type="text/css"
+	href="/cpws/blue/css/cpwsNew.css;jsessionid=BC5982821038B68D7C803B23C58978F1" media="all" />
+<script type="text/javascript">
+    var ctx = "";
+</script>
+</head>
+<body>
+	<input type="hidden" id="currentPage" value="cpwsView">
+	<!--裁判文书开始-->
+	<div class="yf">
+		<!--蓝色title-->
+		<div class="fd-titleBox layer">
+			<span class="fd-title"></span>
+		</div>
+		<!--title完-->
+		<div class="fd-cantion fd-p50 fd-bg-fff">
+			<div class="grid_layout_920 m0_auto">
+				<div class="article article_ta_c">
+					<div class="article_hd">
+						<h3 class="h3_22_m_blue">宦春蕾等合同执行裁定书</h3>
+						<p class="p_date">
+							发布日期：
+							2019-9-4</p>
+					</div>
+					<!-- article_hd end -->
+
+					<!--新增的文章详情信息开始-->
+					<div class="fd-article-infor">
+						<table border="0" cellspacing="0" cellpadding="0" class="disabled">
+							<tr>
+								<td width="33%"><span class="fd-lable">审理法院：</span> <input
+									type="text" class="fd-input" disabled="disabled"
+									value="北京市大兴区人民法院" /></td>
+								<td width="33%"><span class="fd-lable">案件类型：</span> <input
+									type="text" class="fd-input" disabled="disabled"
+									value="执行" /></td>
+								<td width="33%"><span class="fd-lable">案由：</span> <input
+									type="text" class="fd-input" disabled="disabled"
+									value="劳动争议、人事争议" /></td>
+							</tr>
+							<tr>
+								<td><span class="fd-lable">文书种类：</span> <input type="text"
+									class="fd-input" disabled="disabled" value="裁定书" />
+								</td>
+								<td><span class="fd-lable">案号：</span> <input type="text"
+									class="fd-input" disabled="disabled" value="(2019)京0115执144号" /></td>
+								<td><span class="fd-lable">裁判日期：</span> <input type="text"
+									class="fd-input" disabled="disabled"
+									value='2019年03月14日' /></td>
+							</tr>
+						</table>
+					</div>
+					<!--新增的文章详情信息完-->
+					<div class="article_con" id="cc">
+						<script language="javascript">
+							document.getElementById("cc").innerHTML = unescape("<html xmlns:v=\"urn:schemas-microsoft-com:vml\"\nxmlns:o=\"urn:schemas-microsoft-com:office:office\"\nxmlns:w=\"urn:schemas-microsoft-com:office:word\"\nxmlns:m=\"http://schemas.microsoft.com/office/2004/12/omml\"\nxmlns=\"http://www.w3.org/TR/REC-html40\">\n\n<head>\n<meta http-equiv=Content-Type content=\"text/html; charset=gb2312\">\n<meta name=ProgId content=Word.Document>\n<meta name=Generator content=\"Microsoft Word 12\">\n<meta name=Originator content=\"Microsoft Word 12\">\n<link rel=File-List\nhref=\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/filelist.xml\">\n<!--[if gte mso 9]><xml>\n <o:DocumentProperties>\n  <o:Author>\u5468\u4E3D</o:Author>\n  <o:Template>\u7EC8\u672C\u6A21\u677F\u5B9A\u7A3F.dotx</o:Template>\n  <o:LastAuthor>Windows \u7528\u6237</o:LastAuthor>\n  <o:Revision>2</o:Revision>\n  <o:TotalTime>7</o:TotalTime>\n  <o:LastPrinted>2019-07-10T02:04:00Z</o:LastPrinted>\n  <o:Created>2019-09-03T02:48:00Z</o:Created>\n  <o:LastSaved>2019-09-03T02:48:00Z</o:LastSaved>\n  <o:Pages>3</o:Pages>\n  <o:Words>125</o:Words>\n  <o:Characters>716</o:Characters>\n  <o:Company>Lenovo</o:Company>\n  <o:Lines>5</o:Lines>\n  <o:Paragraphs>1</o:Paragraphs>\n  <o:CharactersWithSpaces>840</o:CharactersWithSpaces>\n  <o:Version>12.00</o:Version>\n </o:DocumentProperties>\n</xml><![endif]-->\n<link rel=themeData\nhref=\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/themedata.thmx\">\n<link rel=colorSchemeMapping\nhref=\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/colorschememapping.xml\">\n<!--[if gte mso 9]><xml>\n <w:WordDocument>\n  <w:TrackMoves>false</w:TrackMoves>\n  <w:TrackFormatting/>\n  <w:PunctuationKerning/>\n  <w:DrawingGridHorizontalSpacing>17.45 \u78C5</w:DrawingGridHorizontalSpacing>\n  <w:DrawingGridVerticalSpacing>26.55 \u78C5</w:DrawingGridVerticalSpacing>\n  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>\n  <w:ValidateAgainstSchemas/>\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\n  <w:DoNotPromoteQF/>\n  <w:LidThemeOther>EN-US</w:LidThemeOther>\n  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>\n  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>\n  <w:Compatibility>\n   <w:SpaceForUL/>\n   <w:BalanceSingleByteDoubleByteWidth/>\n   <w:DoNotLeaveBackslashAlone/>\n   <w:ULTrailSpace/>\n   <w:DoNotExpandShiftReturn/>\n   <w:AdjustLineHeightInTable/>\n   <w:BreakWrappedTables/>\n   <w:SnapToGridInCell/>\n   <w:WrapTextWithPunct/>\n   <w:UseAsianBreakRules/>\n   <w:DontGrowAutofit/>\n   <w:DontUseIndentAsNumberingTabStop/>\n   <w:FELineBreak11/>\n   <w:WW11IndentRules/>\n   <w:DontAutofitConstrainedTables/>\n   <w:AutofitLikeWW11/>\n   <w:HangulWidthLikeWW11/>\n   <w:UseNormalStyleForList/>\n   <w:UseFELayout/>\n  </w:Compatibility>\n  <m:mathPr>\n   <m:mathFont m:val=\"Cambria Math\"/>\n   <m:brkBin m:val=\"before\"/>\n   <m:brkBinSub m:val=\"--\"/>\n   <m:smallFrac m:val=\"off\"/>\n   <m:dispDef/>\n   <m:lMargin m:val=\"0\"/>\n   <m:rMargin m:val=\"0\"/>\n   <m:defJc m:val=\"centerGroup\"/>\n   <m:wrapIndent m:val=\"1440\"/>\n   <m:intLim m:val=\"subSup\"/>\n   <m:naryLim m:val=\"undOvr\"/>\n  </m:mathPr></w:WordDocument>\n</xml><![endif]--><!--[if gte mso 9]><xml>\n <w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\">\n  <w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/>\n  <w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/>\n  <w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/>\n  <w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/>\n  <w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/>\n  <w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/>\n  <w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/>\n  <w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/>\n  <w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/>\n  <w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/>\n  <w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/>\n  <w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/>\n  <w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/>\n  <w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/>\n  <w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/>\n  <w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/>\n  <w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/>\n  <w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/>\n </w:LatentStyles>\n</xml><![endif]-->\n<style>\n<!--\n /* Font Definitions */\n @font-face\n\t{font-family:\u5B8B\u4F53;\n\tpanose-1:2 1 6 0 3 1 1 1 1 1;\n\tmso-font-alt:SimSun;\n\tmso-font-charset:134;\n\tmso-generic-font-family:auto;\n\tmso-font-pitch:variable;\n\tmso-font-signature:3 680460288 22 0 262145 0;}\n@font-face\n\t{font-family:\"Cambria Math\";\n\tpanose-1:2 4 5 3 5 4 6 3 2 4;\n\tmso-font-charset:0;\n\tmso-generic-font-family:roman;\n\tmso-font-pitch:variable;\n\tmso-font-signature:-536870145 1107305727 0 0 415 0;}\n@font-face\n\t{font-family:Calibri;\n\tpanose-1:2 15 5 2 2 2 4 3 2 4;\n\tmso-font-charset:0;\n\tmso-generic-font-family:swiss;\n\tmso-font-pitch:variable;\n\tmso-font-signature:-520092929 1073786111 9 0 415 0;}\n@font-face\n\t{font-family:Tahoma;\n\tpanose-1:2 11 6 4 3 5 4 4 2 4;\n\tmso-font-charset:0;\n\tmso-generic-font-family:swiss;\n\tmso-font-pitch:variable;\n\tmso-font-signature:-520081665 -1073717157 41 0 66047 0;}\n@font-face\n\t{font-family:\u65B9\u6B63\u5C0F\u6807\u5B8B\u7B80\u4F53;\n\tmso-font-alt:\"Arial Unicode MS\";\n\tmso-font-charset:134;\n\tmso-generic-font-family:script;\n\tmso-font-pitch:fixed;\n\tmso-font-signature:0 135135232 16 0 262144 0;}\n@font-face\n\t{font-family:\u4EFF\u5B8B_GB2312;\n\tmso-font-alt:\"Arial Unicode MS\";\n\tmso-font-charset:134;\n\tmso-generic-font-family:modern;\n\tmso-font-pitch:fixed;\n\tmso-font-signature:0 135135232 16 0 262144 0;}\n@font-face\n\t{font-family:\"\\@\u5B8B\u4F53\";\n\tpanose-1:2 1 6 0 3 1 1 1 1 1;\n\tmso-font-charset:134;\n\tmso-generic-font-family:auto;\n\tmso-font-pitch:variable;\n\tmso-font-signature:3 680460288 22 0 262145 0;}\n@font-face\n\t{font-family:\"\\@\u65B9\u6B63\u5C0F\u6807\u5B8B\u7B80\u4F53\";\n\tmso-font-charset:134;\n\tmso-generic-font-family:script;\n\tmso-font-pitch:fixed;\n\tmso-font-signature:0 135135232 16 0 262144 0;}\n@font-face\n\t{font-family:\"\\@\u4EFF\u5B8B_GB2312\";\n\tmso-font-charset:134;\n\tmso-generic-font-family:modern;\n\tmso-font-pitch:fixed;\n\tmso-font-signature:0 135135232 16 0 262144 0;}\n /* Style Definitions */\n p.MsoNormal, li.MsoNormal, div.MsoNormal\n\t{mso-style-unhide:no;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmargin:0cm;\n\tmargin-bottom:.0001pt;\n\ttext-align:justify;\n\ttext-justify:inter-ideograph;\n\tmso-pagination:none;\n\tfont-size:10.5pt;\n\tmso-bidi-font-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-fareast-font-family:\u5B8B\u4F53;\n\tmso-bidi-font-family:\"Times New Roman\";\n\tmso-font-kerning:1.0pt;}\nh1\n\t{mso-style-priority:9;\n\tmso-style-unhide:no;\n\tmso-style-qformat:yes;\n\tmso-style-link:\"\u6807\u9898 1 Char\";\n\tmso-style-next:\u6B63\u6587;\n\tmargin-top:17.0pt;\n\tmargin-right:0cm;\n\tmargin-bottom:16.5pt;\n\tmargin-left:0cm;\n\ttext-align:justify;\n\ttext-justify:inter-ideograph;\n\tline-height:240%;\n\tmso-pagination:lines-together;\n\tpage-break-after:avoid;\n\tmso-outline-level:1;\n\tfont-size:22.0pt;\n\tfont-family:\"Times New Roman\",\"serif\";\n\tmso-font-kerning:22.0pt;}\np.MsoHeader, li.MsoHeader, div.MsoHeader\n\t{mso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-link:\"\u9875\u7709 Char\";\n\tmargin:0cm;\n\tmargin-bottom:.0001pt;\n\ttext-align:center;\n\tmso-pagination:none;\n\ttab-stops:center 207.65pt right 415.3pt;\n\tlayout-grid-mode:char;\n\tborder:none;\n\tmso-border-bottom-alt:solid windowtext .75pt;\n\tpadding:0cm;\n\tmso-padding-alt:0cm 0cm 1.0pt 0cm;\n\tfont-size:9.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-fareast-font-family:\u5B8B\u4F53;\n\tmso-bidi-font-family:\"Times New Roman\";\n\tmso-font-kerning:1.0pt;}\np.MsoFooter, li.MsoFooter, div.MsoFooter\n\t{mso-style-priority:99;\n\tmso-style-link:\"\u9875\u811A Char\";\n\tmargin:0cm;\n\tmargin-bottom:.0001pt;\n\tmso-pagination:none;\n\ttab-stops:center 207.65pt right 415.3pt;\n\tlayout-grid-mode:char;\n\tfont-size:9.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-fareast-font-family:\u5B8B\u4F53;\n\tmso-bidi-font-family:\"Times New Roman\";\n\tmso-font-kerning:1.0pt;}\nspan.1Char\n\t{mso-style-name:\"\u6807\u9898 1 Char\";\n\tmso-style-priority:9;\n\tmso-style-unhide:no;\n\tmso-style-locked:yes;\n\tmso-style-link:\"\u6807\u9898 1\";\n\tmso-ansi-font-size:22.0pt;\n\tmso-bidi-font-size:22.0pt;\n\tfont-family:\"Times New Roman\",\"serif\";\n\tmso-ascii-font-family:\"Times New Roman\";\n\tmso-fareast-font-family:\u5B8B\u4F53;\n\tmso-hansi-font-family:\"Times New Roman\";\n\tmso-bidi-font-family:\"Times New Roman\";\n\tmso-font-kerning:22.0pt;\n\tfont-weight:bold;}\np.default, li.default, div.default\n\t{mso-style-name:default;\n\tmso-style-unhide:no;\n\tmso-margin-top-alt:auto;\n\tmargin-right:0cm;\n\tmso-margin-bottom-alt:auto;\n\tmargin-left:0cm;\n\tmso-pagination:widow-orphan;\n\tfont-size:12.0pt;\n\tfont-family:\u5B8B\u4F53;\n\tmso-bidi-font-family:\u5B8B\u4F53;}\nspan.Char\n\t{mso-style-name:\"\u9875\u7709 Char\";\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-unhide:no;\n\tmso-style-locked:yes;\n\tmso-style-link:\u9875\u7709;\n\tmso-ansi-font-size:9.0pt;\n\tmso-bidi-font-size:9.0pt;}\nspan.Char0\n\t{mso-style-name:\"\u9875\u811A Char\";\n\tmso-style-priority:99;\n\tmso-style-unhide:no;\n\tmso-style-locked:yes;\n\tmso-style-link:\u9875\u811A;\n\tmso-ansi-font-size:9.0pt;\n\tmso-bidi-font-size:9.0pt;}\nspan.x-display6\n\t{mso-style-name:x-display6;\n\tmso-style-unhide:no;\n\tmso-ansi-font-size:10.5pt;\n\tmso-bidi-font-size:10.5pt;\n\tfont-family:\u5B8B\u4F53;\n\tmso-ascii-font-family:\u5B8B\u4F53;\n\tmso-fareast-font-family:\u5B8B\u4F53;\n\tmso-hansi-font-family:\u5B8B\u4F53;\n\tmso-bidi-font-family:Tahoma;\n\tcolor:#1E6EBF;\n\tmso-hide:none;\n\tfont-style:normal;}\n.MsoChpDefault\n\t{mso-style-type:export-only;\n\tmso-default-props:yes;\n\tmso-ascii-font-family:Calibri;\n\tmso-fareast-font-family:\u5B8B\u4F53;\n\tmso-hansi-font-family:Calibri;}\n /* Page Definitions */\n @page\n\t{mso-page-border-surround-header:no;\n\tmso-page-border-surround-footer:no;\n\tmso-footnote-separator:url(\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/header.html\") fs;\n\tmso-footnote-continuation-separator:url(\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/header.html\") fcs;\n\tmso-endnote-separator:url(\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/header.html\") es;\n\tmso-endnote-continuation-separator:url(\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/header.html\") ecs;\n\tmso-facing-pages:yes;}\n@page Section1\n\t{size:21.0cm 841.95pt;\n\tmargin:102.05pt 2.0cm 102.05pt 3.0cm;\n\tmso-header-margin:68.05pt;\n\tmso-footer-margin:68.05pt;\n\tmso-even-header:url(\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/header.html\") eh1;\n\tmso-even-footer:url(\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/header.html\") ef1;\n\tmso-footer:url(\"tempKF1Pd995GGFPDR0Uw0AvW1FjmrJSFPq7tytzehdev0FCGvPnwbnlp4qSQGzPm4mB9FvTzmvk6DRtkyEmwt7TnKa5UelmGQk9rLKd.files/header.html\") f1;\n\tmso-paper-source:0;}\ndiv.Section1\n\t{page:Section1;}\n-->\n</style>\n<!--[if gte mso 10]>\n<style>\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\u666E\u901A\u8868\u683C;\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin:0cm;\n\tmso-para-margin-bottom:.0001pt;\n\tmso-pagination:widow-orphan;\n\tfont-size:10.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-bidi-font-family:\"Times New Roman\";}\n</style>\n<![endif]--><!--[if gte mso 9]><xml>\n <o:shapedefaults v:ext=\"edit\" spidmax=\"2050\"/>\n</xml><![endif]--><!--[if gte mso 9]><xml>\n <o:shapelayout v:ext=\"edit\">\n  <o:idmap v:ext=\"edit\" data=\"2\"/>\n </o:shapelayout></xml><![endif]-->\n</head>\n\n<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>\n\n<div class=Section1>\n\n<p class=MsoNormal align=center style='text-align:center'><span\nstyle='font-size:22.0pt;mso-bidi-font-size:11.0pt;font-family:\u65B9\u6B63\u5C0F\u6807\u5B8B\u7B80\u4F53;\nmso-hansi-font-family:\u5B8B\u4F53;mso-font-kerning:0pt'>\u5317\u4EAC\u5E02\u5927\u5174\u533A\u4EBA\u6C11\u6CD5\u9662<span lang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal align=center style='margin-bottom:24.0pt;mso-para-margin-bottom:\n2.0gd;text-align:center'><span style='font-size:22.0pt;mso-bidi-font-size:11.0pt;\nfont-family:\u65B9\u6B63\u5C0F\u6807\u5B8B\u7B80\u4F53;mso-hansi-font-family:\u5B8B\u4F53;mso-font-kerning:0pt'>\u6267\u884C\u88C1\u5B9A\u4E66<span\nlang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal align=right style='margin-top:0cm;margin-right:31.5pt;\nmargin-bottom:12.0pt;margin-left:0cm;mso-para-margin-top:0cm;mso-para-margin-right:\n3.0gd;mso-para-margin-bottom:1.0gd;mso-para-margin-left:0cm;text-align:right;\nline-height:19.0pt;mso-line-height-rule:exactly;word-break:break-all'><span\nlang=EN-US style='font-size:16.0pt;mso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;\nmso-hansi-font-family:\"Times New Roman\";mso-font-kerning:0pt'>(2019)</span><span\nstyle='font-size:16.0pt;mso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;\nmso-hansi-font-family:\"Times New Roman\";mso-font-kerning:0pt'>\u4EAC<span\nlang=EN-US>0115</span>\u6267<span lang=EN-US>144</span>\u53F7<span lang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u7533\u8BF7\u6267\u884C\u4EBA\uFF1A\u5BA6\u6625\u857E\uFF0C\u5973\uFF0C\u6C49\u65CF\uFF0C<span lang=EN-US>1981</span>\u5E74<span\nlang=EN-US>4</span>\u6708<span lang=EN-US>2</span>\u65E5\u51FA\u751F\uFF0C\u4F4F\u5317\u4EAC\u5E02\u4E1C\u57CE\u533A\u3002<span lang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u88AB\u6267\u884C\u4EBA<span lang=EN-US>: </span>\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\uFF08\u7EC4\u7EC7\u673A\u6784\u4EE3\u7801\uFF1A<span\nlang=EN-US>MA001NJW8 </span>\uFF09\uFF0C\u4F4F\u6240\u5730\u5317\u4EAC\u5E02\u5927\u5174\u533A\u91D1\u82D1\u8DEF\u7532<span lang=EN-US>15</span>\u53F7<span\nlang=EN-US>6</span>\u5E62<span lang=EN-US>7</span>\u5C42<span lang=EN-US>A701</span>\u5BA4\u3002<span\nlang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u6CD5\u5B9A\u4EE3\u8868\u4EBA\uFF1A\u674E\u4FCA\u4F1F\u3002<span lang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u5BA6\u6625\u857E\u7533\u8BF7\u6267\u884C\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u52B3\u52A8\u4E89\u8BAE\u7EA0\u7EB7\u4E00\u6848\uFF0C\u5317\u4EAC\u5E02\u5927\u5174\u533A\u52B3\u52A8\u4EBA\u4E8B\u4E89\u8BAE\u4EF2\u88C1\u59D4\u5458\u4F1A\u4F5C\u51FA\u7684\u4EAC\u5174\u52B3\u4EBA\u4EF2\u5B57\u3010<span\nlang=EN-US>2018</span>\u3011\u7B2C<span lang=EN-US>3553</span>\u53F7\u88C1\u51B3\u4E66\u5DF2\u53D1\u751F\u6CD5\u5F8B\u6548\u529B\u3002\u5BA6\u6625\u857E\u5411\u672C\u9662\u7533\u8BF7\u6267\u884C\uFF0C\u8981\u6C42\u88AB\u6267\u884C\u4EBA\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u652F\u4ED8<span\nlang=EN-US>2018</span>\u5E74<span lang=EN-US>5</span>\u6708<span lang=EN-US>15</span>\u65E5\u81F3<span\nlang=EN-US>2018</span>\u5E74<span lang=EN-US>5</span>\u6708<span lang=EN-US>31</span>\u65E5\u5DE5\u8D44<span\nlang=EN-US>4781.6</span>\u5143\u3001\u7ECF\u6D4E\u8865\u507F\u91D1<span lang=EN-US>4000</span>\u5143\u3002\u672C\u9662\u5DF2\u7ACB\u6848\u6267\u884C\u3002<span\nlang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u672C\u9662\u5728\u6267\u884C\u8FC7\u7A0B\u4E2D\uFF0C\u5DF2\u5411\u88AB\u6267\u884C\u4EBA\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u53D1\u9001\u4E86\u6267\u884C\u901A\u77E5\u4E66\u3001\u62A5\u544A\u8D22\u4EA7\u4EE4\u3001\u9650\u5236\u6D88\u8D39\u4EE4\u3002\u7ECF\u67E5\uFF0C\u672C\u9662\u672A\u53D1\u73B0\u88AB\u6267\u884C\u4EBA\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u6709\u53EF\u4F9B\u6267\u884C\u7684\u8D22\u4EA7\u3002\u7533\u8BF7\u6267\u884C\u4EBA\u5BA6\u6625\u857E\u4EA6\u672A\u63D0\u4F9B\u88AB\u6267\u884C\u4EBA\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u53EF\u4F9B\u6267\u884C\u7684\u8D22\u4EA7\u6216\u8D22\u4EA7\u7EBF\u7D22\u3002<span\nlang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u672C\u6848\u7533\u8BF7\u6267\u884C\u4EBA\u5BA6\u6625\u857E\u7533\u8BF7\u6267\u884C\u7684<span lang=EN-US>2018</span>\u5E74<span\nlang=EN-US>5</span>\u6708<span lang=EN-US>15</span>\u65E5\u81F3<span lang=EN-US>2018</span>\u5E74<span\nlang=EN-US>5</span>\u6708<span lang=EN-US>31</span>\u65E5\u5DE5\u8D44<span lang=EN-US>4781.6</span>\u5143\u3001\u7ECF\u6D4E\u8865\u507F\u91D1<span\nlang=EN-US>4000</span>\u5143\u672A\u53D7\u6E05\u507F\u3002\u7ECF\u7533\u8BF7\u6267\u884C\u4EBA\u5BA6\u6625\u857E\u786E\u8BA4\uFF0C\u88AB\u6267\u884C\u4EBA\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u786E\u65E0\u8D22\u4EA7\u53EF\u4F9B\u6267\u884C\u3002\u4F9D\u7167\u300A\u6700\u9AD8\u4EBA\u6C11\u6CD5\u9662\u5173\u4E8E\u9002\u7528\u3008\u4E2D\u534E\u4EBA\u6C11\u5171\u548C\u56FD\u6C11\u4E8B\u8BC9\u8BBC\u6CD5\u3009\u7684\u89E3\u91CA\u300B\u7B2C\u4E94\u767E\u4E00\u5341\u4E5D\u6761\u7684\u89C4\u5B9A\uFF0C\u88C1\u5B9A\u5982\u4E0B\uFF1A<span\nlang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u7EC8\u7ED3\u672C\u6B21\u6267\u884C\u7A0B\u5E8F\u3002<span lang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u7533\u8BF7\u6267\u884C\u4EBA\u5BA6\u6625\u857E\u4EAB\u6709\u8981\u6C42\u88AB\u6267\u884C\u4EBA\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u7EE7\u7EED\u5C65\u884C\u503A\u52A1\u53CA\u4F9D\u6CD5\u5411\u672C\u9662\u7533\u8BF7\u6062\u590D\u6267\u884C\u7684\u6743\u5229\uFF0C\u88AB\u6267\u884C\u4EBA\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u8D1F\u6709\u7EE7\u7EED\u5411\u7533\u8BF7\u6267\u884C\u4EBA\u5BA6\u6625\u857E\u5C65\u884C\u503A\u52A1\u7684\u4E49\u52A1\u3002\u7533\u8BF7\u6267\u884C\u4EBA\u5BA6\u6625\u857E\u53D1\u73B0\u88AB\u6267\u884C\u4EBA\u5317\u4EAC\u4F18\u65F6\u68A6\u60F3\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8\u6709\u53EF\u4F9B\u6267\u884C\u8D22\u4EA7\u7684\uFF0C\u53EF\u4EE5\u5411\u672C\u9662\u7533\u8BF7\u6062\u590D\u6267\u884C\u3002\u7533\u8BF7\u6062\u590D\u6267\u884C\u4E0D\u53D7\u7533\u8BF7\u6267\u884C\u65F6\u6548\u671F\u95F4\u7684\u9650\u5236\u3002<span\nlang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal style='text-indent:32.0pt;mso-char-indent-count:2.0;\nline-height:28.0pt;mso-line-height-rule:exactly'><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u672C\u88C1\u5B9A\u9001\u8FBE\u540E\u5373\u53D1\u751F\u6CD5\u5F8B\u6548\u529B\u3002<span lang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal align=right style='margin-top:48.0pt;margin-right:31.5pt;\nmargin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;mso-para-margin-top:\n4.0gd;mso-para-margin-right:3.0gd;mso-para-margin-bottom:0cm;mso-para-margin-left:\n0cm;mso-para-margin-bottom:.0001pt;text-align:right;line-height:150%'><span\nstyle='font-size:16.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:\n\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;mso-font-kerning:0pt'>\u5BA1\u3000\u3000\u5224\u3000\u3000\u957F\u3000\u3000\u3000\u674E\u3000\u8F89<span\nlang=EN-US><br>\n</span>\u5BA1\u3000\u3000\u5224\u3000\u3000\u5458\u3000\u3000\u3000\u7533\u5BB6\u6770<span lang=EN-US><br>\n</span>\u5BA1\u3000\u3000\u5224\u3000\u3000\u5458\u3000\u3000\u3000\u4EFB\u7231\u5E73</span><span lang=EN-US style='mso-font-kerning:0pt'><o:p></o:p></span></p>\n\n<p class=MsoNormal align=right style='margin-top:72.0pt;margin-right:31.5pt;\nmargin-bottom:24.0pt;margin-left:0cm;mso-para-margin-top:6.0gd;mso-para-margin-right:\n3.0gd;mso-para-margin-bottom:2.0gd;mso-para-margin-left:0cm;text-align:right;\ntext-indent:45.95pt'><span style='font-size:16.0pt;mso-bidi-font-size:11.0pt;\nfont-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;mso-font-kerning:0pt'>\u4E8C</span><span\nstyle='font-size:16.0pt;mso-bidi-font-size:11.0pt;font-family:\u5B8B\u4F53;mso-bidi-font-family:\n\u5B8B\u4F53;mso-font-kerning:0pt'>\u3007</span><span style='font-size:16.0pt;mso-bidi-font-size:\n11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u4EFF\u5B8B_GB2312;mso-bidi-font-family:\n\u4EFF\u5B8B_GB2312;mso-font-kerning:0pt'>\u4E00</span><span style='font-size:16.0pt;\nmso-bidi-font-size:11.0pt;font-family:\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;\nmso-font-kerning:0pt'>\u4E5D\u5E74\u4E09\u6708\u5341\u56DB\u65E5<span lang=EN-US><o:p></o:p></span></span></p>\n\n<p class=MsoNormal align=right style='margin-right:31.5pt;mso-para-margin-right:\n3.0gd;text-align:right;text-indent:45.95pt;line-height:150%'><span\nstyle='font-size:16.0pt;mso-bidi-font-size:11.0pt;line-height:150%;font-family:\n\u4EFF\u5B8B_GB2312;mso-hansi-font-family:\u5B8B\u4F53;mso-font-kerning:0pt'>\u4E66\u3000\u3000\u8BB0\u3000\u3000\u5458\u3000\u3000\u3000\u5E9E\u3000\u8D8A<span\nlang=EN-US><o:p></o:p></span></span></p>\n\n</div>\n\n</body>\n\n</html>\n");
+						</script>
+					</div>
+					<!-- article_con end -->
+				</div>
+				<!-- article_ta_c end -->
+			</div>
+			<input type="hidden" id="atype" value="">
+			<!--新增的文书信息开始-->
+			<div class="fd-document-infor fd-p40 fd-mt25">
+				<!--关联文书-->
+				<!--同案由文书-->
+				<a name="type-tayws"></a>
+				<div class="fd-list fd-p6-18">
+					<h1 style="text-align: left;">同案由文书</h1>
+					<div class="fd-detail-info">
+						<span class="fd-detail-info-first"></span> 
+						<span class="fd-w25pre" title="周云春等合同执行裁定书">
+						<a class="cpws-view-sameAy" href="/cpws/paperView.htm?id=100889909807">周云春等合同执行裁定书</a></span>
+						<span class="fd-w25pre">(2019)京0115执65号</span>
+						<span class="fd-w15pre">2019-03-14</span> <span>裁定书</span>
+					</div>
+					<div class="fd-detail-info">
+						<span class="fd-detail-info-first"></span> 
+						<span class="fd-w25pre" title="张鸿浩等合同执行裁定书">
+						<a class="cpws-view-sameAy" href="/cpws/paperView.htm?id=100889908662">张鸿浩等合同执行裁定书</a></span>
+						<span class="fd-w25pre">(2019)京0115执80号</span>
+						<span class="fd-w15pre">2019-03-14</span> <span>裁定书</span>
+					</div>
+					<div class="fd-detail-info">
+						<span class="fd-detail-info-first"></span> 
+						<span class="fd-w25pre" title="李宏伟等合同执行裁定书">
+						<a class="cpws-view-sameAy" href="/cpws/paperView.htm?id=100889916007">李宏伟等合同执行裁定书</a></span>
+						<span class="fd-w25pre">(2019)京0115执62号</span>
+						<span class="fd-w15pre">2019-03-14</span> <span>裁定书</span>
+					</div>
+					<div class="fd-detail-info">
+						<span class="fd-detail-info-first"></span> 
+						<span class="fd-w25pre" title="刘国园等合同执行裁定书">
+						<a class="cpws-view-sameAy" href="/cpws/paperView.htm?id=100889915782">刘国园等合同执行裁定书</a></span>
+						<span class="fd-w25pre">(2019)京0115执53号</span>
+						<span class="fd-w15pre">2019-03-14</span> <span>裁定书</span>
+					</div>
+					<div class="fd-detail-info">
+						<span class="fd-detail-info-first"></span> 
+						<span class="fd-w25pre" title="侯俐妃等合同执行裁定书">
+						<a class="cpws-view-sameAy" href="/cpws/paperView.htm?id=100890020485">侯俐妃等合同执行裁定书</a></span>
+						<span class="fd-w25pre">(2019)京0115执71号</span>
+						<span class="fd-w15pre">2019-03-14</span> <span>裁定书</span>
+					</div>
+					<a href="/cpws/index.htm?ay=劳动争议、人事争议" target="_blank" class="moreSameAyWrits">更多>></a></div>
+				<!--庭审公开相关视频-->
+				</div>
+			<!--新增的文书信息完-->
+		</div>
+	</div>
+	<!--裁判文书结束-->
+	<!--回到顶部div-->
+	<div class="fd-backtotop">
+		<a class="cpws-my-collection view-coll-a " title="收藏">
+		<input type="hidden" class="contractId" value="100889916218">
+		<input type="hidden" class="jbfyId" value="10">
+		</a>
+		<a class="fd-btn-download view-download-a" title="下载"><input type="hidden" value="100889916218"></a>
+	</div>
+	<script language="javascript">
+		window.onload=function(){
+			if($("#atype").val()==1 || $("#atype").val()=="1"){
+		  		location.hash='type-glws';
+			}
+			if($("#atype").val()==2 || $("#atype").val()=="2"){
+		  		location.hash='type-tayws';
+			}
+			if($("#atype").val()==3 || $("#atype").val()=="3"){
+		  		location.hash='type-tssp';
+			}
+		}
+		function disableCopy() {
+			return false;
+		}
+		document.body.onselectstart = disableCopy;
+		document.body.oncopy = disableCopy;
+		document.body.oncut = disableCopy;
+		
+		function playZb(linkA,tsfdBh) {
+			var tsname = encodeURIComponent(encodeURIComponent(linkA.title));
+			 window.open("http://www.bjcourt.gov.cn" + "/tszx/vod.htm?ssssuri=/bgmedia/live/" + tsfdBh + ".html?live=&tsname=" + tsname);
+		}
+		
+		function playDb(linkA,tsfdBh) {
+			var tsname = encodeURIComponent(encodeURIComponent(linkA.title));
+		    window.open("http://www.bjcourt.gov.cn" + "/tszx/vod.htm?ssssuri=/bgmedia/hlwvod/" + tsfdBh + ".html?hlwvod=&tsname=" + tsname);
+		}
+	</script>
+</body>
+<script type="text/javascript" src="/login/blue/js/layer/layer.js"></script>
+<script type="text/javascript" src="/cpws/blue/js/cpws-yf.js"></script>
+<script type="text/javascript" src="/cpws/blue/js/cpwsNew.js"></script>
+</html>
+</div>
+		</div>
+		<div class="footer">
+	<div class="footer_in">
+		<div class="footer_l">
+			<div class="friend_link">
+				<span>友情链接 ： </span>
+				<a href="http://www.court.gov.cn/" target="_blank">最高人民法院网 </a>
+<a href="http://www.court.gov.cn/zgcpwsw/" target="_blank">中国裁判文书网 </a> 
+<a href="http://www.chinacourt.org/index.shtml" target="_blank">中国法院网 </a>
+<a href="http://www.xinhuanet.com/" target="_blank">新华网</a>
+<a href="http://www.people.com.cn/" target="_blank">人民网</a> 
+<a href="http://www.gmw.cn/" target="_blank">光明网</a>
+<a href="http://www.legaldaily.com.cn/" target="_blank">法制网 </a>
+<a href="http://www.jcrb.com/" target="_blank">正义网 </a></div>
+			<!-- friend_link end -->
+			<div class="copyright" >
+			    <span style="width: 340px;float: left;">
+				<p>北京市高级人民法院版权所有</p>
+<p>地址 ： 北京市朝阳区建国门南大街10号 技术服务</p><p class="p_bh">京ICP备13053290号   京公网安备11010502025090</p>
+				</span>
+				<span style="width: 150px;float: left;">
+				<a href="//bszs.conac.cn/sitename?method=show&amp;id=278959E193AA2E8AE053022819AC391D" target="_blank">
+                  <img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/red_error.png" data-bd-imgshare-binded="1">
+                 </a>
+                 </span>
+			</div>
+			   <!-- <script type="text/javascript">
+                    document.write(
+                            unescape("%3Cspan id='_ideConac'%3E3C/span%3E%3Cscript src='http://dcs.conac.cn/js/01/000/0000/60624207/CA010000000606242070003.js' type='text/javascript'%3E%3C/script%3E"));
+               </script> -->
+			
+		</div>
+		<!-- footer_l end -->
+		<div class="footer_r">
+		<div class="fyyz"></div></div>
+		<!-- footer_r end -->
+
+	</div>
+	<!-- footer_in end -->
+</div>
+<!-- footer end -->
+<script type="text/javascript" src="/pub/blueskin/scripts/addfocus.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script type="text/javascript" src="/pub/blueskin/scripts/addSelect.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script type="text/javascript" src="/pub/blueskin/scripts/global.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script type="text/javascript" src="/pub/blueskin/scripts/search.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script src="/jq/jquery-ui/jquery-ui-1.9.2.custom.min.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script src="/jq/jquery-ui/jquery.ui.datepicker-zh-CN.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $(".date_input").datepicker({});
+            if(typeof document.body.style.maxHeight=="undefined"){
+                $(".sp_login_btn,.sp_count,.a_login ,.a_logo,.header_b,.main_nav .first_item a,.dl_left_nav dt ,.dl_left_nav dd span,.dl_left_nav dd a,.sp_mousedown,.search_all_btn,.shadow").addClass("png_bg");
+            }
+            //sp_login_btn
+            $(".header_info  .sp_login_btn").hover(function(){
+                $(this).addClass("sp_login_btn_hover");
+            },function (){
+                $(this).removeClass("sp_login_btn_hover");  
+            });
+            
+        });
+        $("#search_menu").addSelect({
+            triggerEleId:"sp_mousedown",
+            searchContentContain:".search_con_nav", 
+            addHoverClass:"dd_hover",
+            getValueClass:".sp_gain_value"
+        });
+        $("#search_menu_index").addSelect({
+            triggerEleId:"sp_mousedown_index",
+            searchContentContain:".search_con_nav", 
+            addHoverClass:"dd_hover",
+            getValueClass:".sp_gain_value"
+        });
+        $("#bg_search").addFocus({
+            textContent : "输入关键词搜索",
+            defaultColor : "#ababab",
+            textColor : "#333",
+            whetherAddClass : false,
+            newClass : ""
+        });
+        
+    </script>
+<!--[if IE 6]>
+    <script src="scripts/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>
+        DD_belatedPNG.fix('.png_bg');
+    </script>
+<![endif]--><div style="position: fixed;top:150px;width:100%; z-index: 999999;display: none;" id="addQRCodeDialog" >
+    <div class="qrcode_area">
+        <div class="qrcode_header">
+             <span>请扫描二维码下载</span>
+             <span style="font-size:12px;">（支持android2.3及以上版本，ios版本正在研发，敬请期待）</span>
+             <a class="qrcode_close " id="cancelAddQRCodeDialog" ></a>
+        </div>
+        <div class="qrcode_body">
+              <div class="one_qrcode">
+                 <p class="qrcode_title">移动诉讼服务</p>
+                 <p class="qrcode_content">
+                    <img src="/pub/blueskin/images/ewm_ydxx.png;jsessionid=BC5982821038B68D7C803B23C58978F1"/>                     
+                      </p>
+                 <p class="qrcode_desc">移动诉讼服务为公众提供了法院要闻、公告发布、诉讼指南、法院导航、诉讼工具等五项服务。</p>
+              </div>
+              <div class="one_qrcode">
+                 <p class="qrcode_title">移动案件查询</p>
+                 <p class="qrcode_content">
+                   <img src="/pub/blueskin/images/ewm_ydss.png;jsessionid=BC5982821038B68D7C803B23C58978F1" />
+                      </p>
+                 <p class="qrcode_desc">移动案件查询为北京法院涉案当事人提供案件进展查询服务，登陆后可及时接收案件进展通知和电子送达文书信息。</p>
+              </div>
+        </div>
+   </div>
+</div><script type="text/javascript" src="/pub/blueskin/scripts/layerbox.js;jsessionid=BC5982821038B68D7C803B23C58978F1"></script>
+<script type="text/javascript">
+   $(function(){
+       layerDialogPage();
+       var status = null;
+       $(".addQRCodebtn").mouseenter(function(){
+          var that = this;
+           status = setTimeout(function(){
+               $(that).trigger("click");
+           }, 1000);
+       }).mouseleave(function(){
+          clearTimeout(status);
+       });
+/*        $(".qrcode_area").mouseleave(function(){
+           $("#cancelAddQRCodeDialog").trigger("click");
+       }); */
+   });
+</script>
+</div>
+	<!-- end of contain -->
+	<script language="javascript">
+		function disableCopy() {
+			return false;
+		}
+		document.body.onselectstart = disableCopy;
+		document.body.oncopy = disableCopy;
+		document.body.oncut = disableCopy;
+	</script>
+</body>
+</html>

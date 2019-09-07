@@ -1,0 +1,22 @@
+
+urllist:
+    id：
+    url:        url值
+    isdownload:是否下载
+    source:FB  数据来源
+    taskid：    分布式任务
+    
+
+caseText
+# 文书模型
+# id
+# title
+# pubdate
+# sllaw:      审理法院
+# casetype:
+# flag:
+# texttype       文书总类
+# caseNo:         案件号
+# sldate         审理日期
+# content:
+
