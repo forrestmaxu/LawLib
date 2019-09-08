@@ -4,6 +4,7 @@ from urllib.parse import urlencode
 from pyquery import PyQuery as pq
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
+import timeout_decorator
 import uuid
 import sys
 import re,random
@@ -13,6 +14,7 @@ import proxy
 import postdata
 from urllib.parse import urlencode
 import time
+import os,datetime
 
 
 # //mongodb database ip
@@ -63,20 +65,24 @@ def saveUrl(url):
 
 
 #s使用代理访问 
+@timeout_decorator.timeout(30)
 def geturl(url):
-    
-    header,proxies=proxy.xundai()
-    resp=requests.get(url,headers=header,proxies=proxies)
-    # resp=requests.get(url)
-    # print(resp.text)
-    return resp
+    try:
+        header,proxies=proxy.xundai()
+        resp=requests.get(url,headers=header,proxies=proxies)
+        # resp=requests.get(url)
+        # print(resp.text)
+        return resp
+    except:
+        print("the url is time out")
+        logging.error("the "+url +" is time out")
 
 # 获取所有文书id
 def getAllURL():
     conn = MongoClient(SERVER_IP, PORT)
     db = conn.spider  
     my_set = db.urllist
-    result=my_set.find({"id":"100847665237"})
+    result=my_set.find({"isdownload":0})
     for item in result:
         print(item["url"])
         parseContentByID(item["url"])
@@ -84,17 +90,7 @@ def getAllURL():
     # texturl=baseurl+"/cpws/paperView.htm?id="+id
     # print(texturl)
 
-# 文书模型
-# id
-# title
-# pubdate
-# sllaw:      审理法院
-# casetype:
-# flag:
-# texttype       文书总类
-# caseNo:         案件号
-# sldate         审理日期
-# content:
+
 
 
 
@@ -108,61 +104,69 @@ def parseContentByID(texturl):
         # f.write(resp.text)
         # print(type(resp.text))
         doc=pq(resp.text)
+        if not doc:
+            print("doc is null")
         obj=parseBody(doc,texturl)
-        saveBody(obj)
-        morelink=getRelLink(doc)
-        nextRelPage(morelink)
+        if not obj:
+            print("obj is null")
+            return ''
+        saveBody(obj,texturl)
+        # morelink=getRelLink(doc)
+        # flag=nextRelPage(morelink)
         updateFlag(texturl)
     except:
-        print(texturl+" is error ")
+        print("procee the next url")
+
 
 # 解析正文
 def parseBody(doc,texturl):
 
+    try:
+        # title
+        title=doc(".article_hd>.h3_22_m_blue").text()
+        pubdate=doc(".article_hd>.p_date").text()
+        #desc
+        keys=doc(".fd-article-infor>table>tr>td>.fd-lable").items()
+        values=doc(".fd-article-infor>table>tr>td>.fd-input").items()
+        allvalues=[]
+        for it in values:
+            allvalues.append(it.attr('value'))
+        print(allvalues)
+        #body
+        body=doc("#cc")
+        # print(body)
+        resulthtml=body.text()
+        midresult1=resulthtml.replace('''document.getElementById("cc").innerHTML''',"tmpval")
+        midresult=midresult1.replace(";","")
+        # print(midresult)
+        # result=execjs.eval(midresult)
+        result = js2py.eval_js(midresult)
+        # print(result)
 
-    # title
-    title=doc(".article_hd>.h3_22_m_blue").text()
-    pubdate=doc(".article_hd>.p_date").text()
-    #desc
-    keys=doc(".fd-article-infor>table>tr>td>.fd-lable").items()
-    values=doc(".fd-article-infor>table>tr>td>.fd-input").items()
-    allvalues=[]
-    for it in values:
-        allvalues.append(it.attr('value'))
-    print(allvalues)
-    #body
-    body=doc("#cc")
-    # print(body)
-    resulthtml=body.text()
-    midresult1=resulthtml.replace('''document.getElementById("cc").innerHTML''',"tmpval")
-    midresult=midresult1.replace(";","")
-    # print(midresult)
-    # result=execjs.eval(midresult)
-    result = js2py.eval_js(midresult)
-    # print(result)
-
-    # f=open('d:/lawdata/'+title.text(),'w')
-    content=pq(result)
-    resitems=content(".MsoNormal").items()
-    res=''
-    for it in resitems:
-        res+=it.text()
-        # f.write(it.text()+"\n")
-    # print(res)
-    obj={
-        "url":texturl,
-        "title":title,
-        "pubdate":pubdate,
-        "sllaw":   allvalues[0],   
-        "casetype": allvalues[1],
-        "flag": allvalues[2],
-        "texttype": allvalues[3] ,
-        "caseNo": allvalues[4]     ,  
-        "sldate": allvalues[5]   ,      
-        "content":res
-    }
-    # print(obj)
-    return obj
+        # f=open('d:/lawdata/'+title.text(),'w')
+        content=pq(result)
+        resitems=content(".MsoNormal").items()
+        res=''
+        for it in resitems:
+            res+=it.text()
+            # f.write(it.text()+"\n")
+        # print(res)
+        obj={
+            "url":texturl,
+            "title":title,
+            "pubdate":pubdate,
+            "sllaw":   allvalues[0],   
+            "casetype": allvalues[1],
+            "flag": allvalues[2],
+            "texttype": allvalues[3] ,
+            "caseNo": allvalues[4]     ,  
+            "sldate": allvalues[5]   ,      
+            "content":res
+        }
+        # print(obj)
+        return obj
+    except:
+        return ''
 
 def getRelLink(doc):
     morelink=doc(".fd-list a:contains('更多')")
@@ -188,43 +192,51 @@ def parseRelLink(doc):
 
 # 相关链接跳转
 def nextRelPage(morelink):
-    baseurl="http://www.bjcourt.gov.cn"
-    url=baseurl+morelink
-    # /cpws/index.htm?ay=劳动争议、人事争议
-    key=morelink.split('=')[1]
-    print(url)
-    resp=geturl(url)
-    # print(url)
-    f=open('test.html','w',encoding='utf-8')
-    
-    doc=pq(resp.text)
-    f.write(doc.text())
-    # print(doc)
-    flag=isCodePage(doc)
-    # print('aa')
-    if flag:
-        print("the code page is happen")
-    else:
-        parseRelLink(doc)
-    for i in range(2,20):
-        newurl="http://www.bjcourt.gov.cn/cpws/index.htm?st=1&q=&sxnflx=0&prompt=&dsrName=&ajmc=&ajlb=&jbfyId=&zscq=&ay="\
-            +key+"&ah=&cwslbmc=&startCprq=&endCprq=&page="+str(i)
-        resp=geturl(newurl)
+    try:
+        baseurl="http://www.bjcourt.gov.cn"
+        url=baseurl+morelink
+        # /cpws/index.htm?ay=劳动争议、人事争议
+        key=morelink.split('=')[1]
+        # print(url)
+        resp=geturl(url)
+        # print(url)
+        f=open('test.html','w',encoding='utf-8')
+        
         doc=pq(resp.text)
+        f.write(doc.text())
+        # print(doc)
         flag=isCodePage(doc)
-        if not flag:
-            parseRelLink(doc)
+        # print('aa')
+        if flag:
+            print("the code page is happen")
         else:
-            logging.error("the code page is occur")
-        print("#########next page##############")
+            parseRelLink(doc)
+        for i in range(2,20):
+            newurl="http://www.bjcourt.gov.cn/cpws/index.htm?st=1&q=&sxnflx=0&prompt=&dsrName=&ajmc=&ajlb=&jbfyId=&zscq=&ay="\
+                +key+"&ah=&cwslbmc=&startCprq=&endCprq=&page="+str(i)
+            resp=geturl(newurl)
+            doc=pq(resp.text)
+            flag=isCodePage(doc)
+            if not flag:
+                parseRelLink(doc)
+            else:
+                print("the code page is ocuur")
+                break
+            print("#########next page##############")
+        return True
+    except:
+        print("spider the relation data complete")    
+        return False
     
 
 # save the url body content
-def saveBody(doc):
+def saveBody(doc,url):
     conn = MongoClient(SERVER_IP, PORT)
     db = conn.spider  
-    my_set = db.bodycontent
-    res=my_set.find({doc[url]})
+    my_set = db.caseText
+    # my_set.insert(doc)
+   
+    res=my_set.find({"url":url})
     if res.count()==0:
         my_set.insert(doc)
     else:
@@ -237,6 +249,8 @@ def updateFlag(texturl):
     my_set = db.urllist
     query={"url":texturl}
     value={"$set":{'isdownload':1}}
+    my_set.update_one(query,value)
+    print("update flag complete")
 
 # 关键字搜索模块
 def searchByKey(keyword):
@@ -311,7 +325,7 @@ def nextPage(type):
             print("the code ocuur")    
         else:
             getUrl_links(doc)
-        time.sleep(10)
+        time.sleep(5)
 
 # start spider ,type parameter is case type
 def run(type):
@@ -319,14 +333,35 @@ def run(type):
     nextPage(type)
 
 
+# sync update the urllist download flag,if casetext exists the url ,update isdownload 1 else 0
+
+def syncBodytoUrllist():
+    conn = MongoClient(SERVER_IP, PORT)
+    db = conn.spider  
+    my_set = db.caseText
+    res=my_set.find()
+    for item in res:
+        flag=isExists(item["url"])
+        if  flag:
+            updateFlag(item["url"])
+        
+
+def isExists(url):
+    conn = MongoClient(SERVER_IP, PORT)
+    db = conn.spider  
+    my_set = db.urllist
+    res=my_set.find({"url":url})
+    if res.count()!=0:
+        print("the url link is exists")
+
+        return True
+    else:
+        print("the url links is not exists")
+        return False
 
 
 if __name__=="__main__":
-    # nextPage()
-    # testfunc()
-    # saveUrl("/cpws/paperView.htm?id=100889153269")
-    # testurl="http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889916218"
-    # parseContentByID(testurl)
+
 
     # full search
     # tilte=["民事","刑事","行政","执行", "赔偿","知识产权"]
@@ -335,5 +370,14 @@ if __name__=="__main__":
 
 
     # spider the single link and extact the relation links;
-
+    filedate=time.strftime("%Y-%m-%d%H:%M:%S", time.localtime())
+    os.system('cp test.log test.log_'+filedate)
     getAllURL()
+
+
+
+
+    
+
+  
+    # syncBodytoUrllist()

@@ -1,0 +1,352 @@
+07-17-2019 17:17:36 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:38 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100890238365 HTTP/1.1" 200 None
+07-17-2019 17:17:39 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:39 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889285403 HTTP/1.1" 200 None
+07-17-2019 17:17:40 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:41 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889643898 HTTP/1.1" 200 None
+07-17-2019 17:17:41 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:42 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889549532 HTTP/1.1" 200 None
+07-17-2019 17:17:42 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:45 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889540183 HTTP/1.1" 200 None
+07-17-2019 17:17:45 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:47 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889536909 HTTP/1.1" 200 None
+07-17-2019 17:17:47 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:47 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889535624 HTTP/1.1" 200 None
+07-17-2019 17:17:48 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:55 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889534595 HTTP/1.1" 200 None
+07-17-2019 17:17:58 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:58 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889497427 HTTP/1.1" 200 None
+07-17-2019 17:17:59 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-17-2019 17:17:59 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889470903 HTTP/1.1" 200 None
+07-17-2019 17:17:59 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:00 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889448185 HTTP/1.1" 200 None
+07-18-2019 17:18:00 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:00 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889422698 HTTP/1.1" 200 None
+07-18-2019 17:18:01 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:01 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889421237 HTTP/1.1" 200 None
+07-18-2019 17:18:01 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:02 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889420831 HTTP/1.1" 200 None
+07-18-2019 17:18:02 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:03 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889420208 HTTP/1.1" 200 None
+07-18-2019 17:18:03 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:04 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889419723 HTTP/1.1" 200 None
+07-18-2019 17:18:04 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:04 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889419079 HTTP/1.1" 200 None
+07-18-2019 17:18:04 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:06 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889420404 HTTP/1.1" 200 None
+07-18-2019 17:18:06 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:25 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889418868 HTTP/1.1" 200 None
+07-18-2019 17:18:27 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:47 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889420600 HTTP/1.1" 502 73
+07-18-2019 17:18:47 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:47 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889417682 HTTP/1.1" 200 None
+07-18-2019 17:18:48 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:48 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889415434 HTTP/1.1" 200 None
+07-18-2019 17:18:49 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:49 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889414280 HTTP/1.1" 200 None
+07-18-2019 17:18:50 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:50 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889412822 HTTP/1.1" 200 None
+07-18-2019 17:18:50 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-18-2019 17:18:51 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889411274 HTTP/1.1" 200 None
+07-18-2019 17:18:51 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-19-2019 17:19:07 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889409904 HTTP/1.1" 200 None
+07-19-2019 17:19:07 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-19-2019 17:19:08 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889411641 HTTP/1.1" 200 None
+07-19-2019 17:19:08 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-19-2019 17:19:08 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889410512 HTTP/1.1" 200 None
+07-19-2019 17:19:09 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-19-2019 17:19:29 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889409199 HTTP/1.1" 502 73
+07-19-2019 17:19:29 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-19-2019 17:19:30 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889409674 HTTP/1.1" 200 None
+07-19-2019 17:19:30 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:00 root:ERROR:the http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889409441 is time out
+07-20-2019 17:20:00 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:01 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889409374 HTTP/1.1" 200 None
+07-20-2019 17:20:01 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:02 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889408182 HTTP/1.1" 200 None
+07-20-2019 17:20:02 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:03 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889407298 HTTP/1.1" 200 None
+07-20-2019 17:20:03 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:04 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889407312 HTTP/1.1" 200 None
+07-20-2019 17:20:04 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:05 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889406125 HTTP/1.1" 200 None
+07-20-2019 17:20:05 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:07 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889405908 HTTP/1.1" 200 None
+07-20-2019 17:20:09 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:09 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889405834 HTTP/1.1" 200 None
+07-20-2019 17:20:09 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:12 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889407761 HTTP/1.1" 200 None
+07-20-2019 17:20:13 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:15 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889406325 HTTP/1.1" 200 None
+07-20-2019 17:20:15 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:15 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889404397 HTTP/1.1" 200 None
+07-20-2019 17:20:16 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:18 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889405054 HTTP/1.1" 200 None
+07-20-2019 17:20:19 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:19 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889404197 HTTP/1.1" 200 None
+07-20-2019 17:20:20 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:20 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889403846 HTTP/1.1" 200 None
+07-20-2019 17:20:21 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:21 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889403436 HTTP/1.1" 200 None
+07-20-2019 17:20:22 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:22 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889402890 HTTP/1.1" 200 None
+07-20-2019 17:20:23 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:24 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889402683 HTTP/1.1" 200 None
+07-20-2019 17:20:24 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:24 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889401779 HTTP/1.1" 200 None
+07-20-2019 17:20:25 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:25 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889401644 HTTP/1.1" 200 None
+07-20-2019 17:20:26 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:33 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889400731 HTTP/1.1" 200 None
+07-20-2019 17:20:34 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:35 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889400485 HTTP/1.1" 200 None
+07-20-2019 17:20:35 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:36 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889399617 HTTP/1.1" 200 None
+07-20-2019 17:20:36 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:48 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889399328 HTTP/1.1" 200 None
+07-20-2019 17:20:55 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:55 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889398825 HTTP/1.1" 200 None
+07-20-2019 17:20:56 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:56 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889398190 HTTP/1.1" 200 None
+07-20-2019 17:20:57 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-20-2019 17:20:57 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889397775 HTTP/1.1" 200 None
+07-20-2019 17:20:58 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:00 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889397703 HTTP/1.1" 200 None
+07-21-2019 17:21:01 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:04 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889401574 HTTP/1.1" 200 None
+07-21-2019 17:21:08 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:09 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889398102 HTTP/1.1" 200 None
+07-21-2019 17:21:09 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:10 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889396462 HTTP/1.1" 200 None
+07-21-2019 17:21:10 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:25 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889396142 HTTP/1.1" 200 None
+07-21-2019 17:21:32 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:33 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889395139 HTTP/1.1" 200 None
+07-21-2019 17:21:33 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:34 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889404614 HTTP/1.1" 200 None
+07-21-2019 17:21:35 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:41 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889397257 HTTP/1.1" 200 None
+07-21-2019 17:21:41 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:42 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889394254 HTTP/1.1" 200 None
+07-21-2019 17:21:42 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:43 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889393277 HTTP/1.1" 200 None
+07-21-2019 17:21:43 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:44 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889392592 HTTP/1.1" 200 None
+07-21-2019 17:21:44 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:45 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889392509 HTTP/1.1" 200 None
+07-21-2019 17:21:45 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-21-2019 17:21:46 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889392007 HTTP/1.1" 200 None
+07-21-2019 17:21:46 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:02 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889391800 HTTP/1.1" 200 None
+07-22-2019 17:22:02 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:20 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889391721 HTTP/1.1" 200 None
+07-22-2019 17:22:24 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:25 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889391064 HTTP/1.1" 200 None
+07-22-2019 17:22:25 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:26 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889390579 HTTP/1.1" 200 None
+07-22-2019 17:22:26 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:27 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889392667 HTTP/1.1" 200 None
+07-22-2019 17:22:27 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:44 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889390023 HTTP/1.1" 200 None
+07-22-2019 17:22:45 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:46 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889370515 HTTP/1.1" 200 None
+07-22-2019 17:22:46 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:47 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889369182 HTTP/1.1" 200 None
+07-22-2019 17:22:47 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:48 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889371105 HTTP/1.1" 200 None
+07-22-2019 17:22:48 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:48 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889366515 HTTP/1.1" 200 None
+07-22-2019 17:22:48 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-22-2019 17:22:49 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889367936 HTTP/1.1" 200 None
+07-22-2019 17:22:49 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:10 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889365428 HTTP/1.1" 502 73
+07-23-2019 17:23:10 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:12 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889364276 HTTP/1.1" 200 None
+07-23-2019 17:23:13 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:13 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889361239 HTTP/1.1" 200 None
+07-23-2019 17:23:15 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:17 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889355901 HTTP/1.1" 200 None
+07-23-2019 17:23:19 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:19 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889355856 HTTP/1.1" 200 None
+07-23-2019 17:23:20 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:20 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889355826 HTTP/1.1" 200 None
+07-23-2019 17:23:20 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:21 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889355831 HTTP/1.1" 200 None
+07-23-2019 17:23:21 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:22 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889202033 HTTP/1.1" 200 None
+07-23-2019 17:23:22 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:38 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889201365 HTTP/1.1" 200 None
+07-23-2019 17:23:38 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:39 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889200138 HTTP/1.1" 200 None
+07-23-2019 17:23:39 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:40 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889199509 HTTP/1.1" 200 None
+07-23-2019 17:23:40 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:46 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889197638 HTTP/1.1" 200 None
+07-23-2019 17:23:46 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:47 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889205500 HTTP/1.1" 200 None
+07-23-2019 17:23:47 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:52 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889195709 HTTP/1.1" 200 None
+07-23-2019 17:23:54 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:55 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889194787 HTTP/1.1" 200 None
+07-23-2019 17:23:56 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:56 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889193654 HTTP/1.1" 200 None
+07-23-2019 17:23:57 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:57 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889193734 HTTP/1.1" 502 73
+07-23-2019 17:23:57 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-23-2019 17:23:59 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889198206 HTTP/1.1" 200 None
+07-23-2019 17:23:59 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:00 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889189954 HTTP/1.1" 200 None
+07-24-2019 17:24:00 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:01 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889187820 HTTP/1.1" 200 None
+07-24-2019 17:24:01 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:01 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889186969 HTTP/1.1" 200 None
+07-24-2019 17:24:02 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:02 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889186862 HTTP/1.1" 200 None
+07-24-2019 17:24:03 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:03 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889186696 HTTP/1.1" 200 None
+07-24-2019 17:24:04 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:06 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889189792 HTTP/1.1" 200 None
+07-24-2019 17:24:07 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:10 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889184312 HTTP/1.1" 200 None
+07-24-2019 17:24:11 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:12 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889184248 HTTP/1.1" 200 None
+07-24-2019 17:24:12 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:13 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889183815 HTTP/1.1" 200 None
+07-24-2019 17:24:13 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:13 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889182175 HTTP/1.1" 200 None
+07-24-2019 17:24:13 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:14 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889181557 HTTP/1.1" 200 None
+07-24-2019 17:24:14 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:15 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889183281 HTTP/1.1" 200 None
+07-24-2019 17:24:15 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:15 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889182915 HTTP/1.1" 200 None
+07-24-2019 17:24:16 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:16 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889179252 HTTP/1.1" 200 None
+07-24-2019 17:24:19 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:20 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100890403346 HTTP/1.1" 200 None
+07-24-2019 17:24:20 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:20 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100881812400 HTTP/1.1" 200 None
+07-24-2019 17:24:20 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:22 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100884309303 HTTP/1.1" 200 None
+07-24-2019 17:24:23 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:43 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100890518756 HTTP/1.1" 502 73
+07-24-2019 17:24:43 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:50 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100883323768 HTTP/1.1" 200 None
+07-24-2019 17:24:50 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:51 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100890438719 HTTP/1.1" 200 None
+07-24-2019 17:24:51 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-24-2019 17:24:52 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100885407376 HTTP/1.1" 200 None
+07-24-2019 17:24:52 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-25-2019 17:25:08 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100883063993 HTTP/1.1" 200 None
+07-25-2019 17:25:08 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-25-2019 17:25:09 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100890410717 HTTP/1.1" 200 None
+07-25-2019 17:25:09 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-25-2019 17:25:11 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100888318102 HTTP/1.1" 200 None
+07-25-2019 17:25:12 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-25-2019 17:25:28 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889547317 HTTP/1.1" 200 None
+07-25-2019 17:25:28 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-25-2019 17:25:32 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889544426 HTTP/1.1" 200 None
+07-25-2019 17:25:34 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-25-2019 17:25:34 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889529201 HTTP/1.1" 200 None
+07-25-2019 17:25:34 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-25-2019 17:25:35 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889528117 HTTP/1.1" 200 None
+07-25-2019 17:25:35 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:05 root:ERROR:the http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889501554 is time out
+07-26-2019 17:26:05 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:06 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889494020 HTTP/1.1" 200 None
+07-26-2019 17:26:06 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:09 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889488438 HTTP/1.1" 200 None
+07-26-2019 17:26:10 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:10 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889484288 HTTP/1.1" 200 None
+07-26-2019 17:26:12 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:13 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889464003 HTTP/1.1" 200 None
+07-26-2019 17:26:13 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:14 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889403990 HTTP/1.1" 200 None
+07-26-2019 17:26:14 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:15 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889368417 HTTP/1.1" 200 None
+07-26-2019 17:26:15 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:21 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889377463 HTTP/1.1" 200 None
+07-26-2019 17:26:22 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:22 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889372779 HTTP/1.1" 200 None
+07-26-2019 17:26:23 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:26 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100875527372 HTTP/1.1" 200 None
+07-26-2019 17:26:30 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:30 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889462986 HTTP/1.1" 200 None
+07-26-2019 17:26:30 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-26-2019 17:26:50 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889462772 HTTP/1.1" 502 73
+07-26-2019 17:26:50 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:07 root:ERROR:the http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889462521 is time out
+07-27-2019 17:27:07 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:07 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100883337317 HTTP/1.1" 502 73
+07-27-2019 17:27:07 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:07 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100882649128 HTTP/1.1" 200 None
+07-27-2019 17:27:37 root:ERROR:the http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100882649128 is time out
+07-27-2019 17:27:37 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:37 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100882280723 HTTP/1.1" 200 None
+07-27-2019 17:27:38 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:39 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100879252150 HTTP/1.1" 200 None
+07-27-2019 17:27:39 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:39 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100879231313 HTTP/1.1" 502 73
+07-27-2019 17:27:39 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:40 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100878485721 HTTP/1.1" 200 None
+07-27-2019 17:27:40 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:56 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100890348761 HTTP/1.1" 200 None
+07-27-2019 17:27:57 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:57 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100865027211 HTTP/1.1" 200 None
+07-27-2019 17:27:57 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-27-2019 17:27:59 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100865027104 HTTP/1.1" 200 None
+07-28-2019 17:28:14 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:14 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889507787 HTTP/1.1" 200 None
+07-28-2019 17:28:14 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:30 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889489660 HTTP/1.1" 200 None
+07-28-2019 17:28:30 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:31 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889201207 HTTP/1.1" 200 None
+07-28-2019 17:28:31 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:32 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889198580 HTTP/1.1" 200 None
+07-28-2019 17:28:32 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:33 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889195494 HTTP/1.1" 200 None
+07-28-2019 17:28:33 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:34 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889194658 HTTP/1.1" 200 None
+07-28-2019 17:28:34 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:37 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889194311 HTTP/1.1" 200 None
+07-28-2019 17:28:43 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:44 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889176394 HTTP/1.1" 200 None
+07-28-2019 17:28:44 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:46 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889176037 HTTP/1.1" 200 None
+07-28-2019 17:28:46 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-28-2019 17:28:46 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889168051 HTTP/1.1" 200 None
+07-28-2019 17:28:47 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:03 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889341831 HTTP/1.1" 200 None
+07-29-2019 17:29:03 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:03 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889339894 HTTP/1.1" 200 None
+07-29-2019 17:29:04 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:04 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889336800 HTTP/1.1" 200 None
+07-29-2019 17:29:05 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:05 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889334835 HTTP/1.1" 200 None
+07-29-2019 17:29:05 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:06 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889330594 HTTP/1.1" 200 None
+07-29-2019 17:29:06 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:07 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889284311 HTTP/1.1" 200 None
+07-29-2019 17:29:07 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:17 root:ERROR:the http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889207584 is time out
+07-29-2019 17:29:17 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:18 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889203607 HTTP/1.1" 200 None
+07-29-2019 17:29:18 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:30 root:ERROR:the http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100889196323 is time out
+07-29-2019 17:29:30 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-29-2019 17:29:31 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100879202328 HTTP/1.1" 200 None
+07-29-2019 17:29:31 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-30-2019 17:30:01 root:ERROR:the http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100878861060 is time out
+07-30-2019 17:30:01 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-30-2019 17:30:02 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100878587458 HTTP/1.1" 200 None
+07-30-2019 17:30:02 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-30-2019 17:30:04 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100878585237 HTTP/1.1" 200 None
+07-30-2019 17:30:05 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-30-2019 17:30:05 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100878584170 HTTP/1.1" 200 None
+07-30-2019 17:30:06 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-30-2019 17:30:06 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100878503178 HTTP/1.1" 200 None
+07-30-2019 17:30:06 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-30-2019 17:30:08 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100878502546 HTTP/1.1" 200 None
+07-30-2019 17:30:08 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn
+07-30-2019 17:30:08 requests.packages.urllib3.connectionpool:DEBUG:"GET http://www.bjcourt.gov.cn/cpws/paperView.htm?id=100877795807 HTTP/1.1" 200 None
+07-30-2019 17:30:09 requests.packages.urllib3.connectionpool:INFO:Starting new HTTP connection (1): forward.xdaili.cn

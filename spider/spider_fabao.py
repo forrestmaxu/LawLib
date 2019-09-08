@@ -5,12 +5,18 @@ from pyquery import PyQuery as pq
 from bs4 import BeautifulSoup
 import uuid
 import sys
-import re
+import re,time
 from pymongo import MongoClient
 import proxy
 import random
+import timeout_decorator
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions
+from postdata import fabao_data_xingzheng as pdata
 
-url='http://www.pkulaw.cn/cluster_form.aspx?Db=chl&menu_item=law&EncodingName=&keyword=&range=name&'
+
 def get_content(link):
     # headers = {
 	#     "Accept-Language": "zh-CN,zh;q=0.8", 
@@ -28,6 +34,29 @@ def get_content(link):
 	# f.write('hh')
 	pass
 
+
+
+SERVER_IP='127.0.0.1'
+PORT=27017
+DBNAME="splider"
+header={
+
+	"Accept" : " */*",
+	"Accept-Encoding" : " gzip, deflate",
+	"Accept-Language" : " en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+	"Connection" : " keep-alive",
+	"Content-Length" : " 204",
+	"Content-Type" : " application/x-www-form-urlencoded",
+	"Cookie" : " ASP.NET_SessionId=fwdvl0zabwwttezjqo5w25hz; QINGCLOUDELB=f7fbfc03a670863f34b0656d2e114d6fec61ed2f1b6f7d61f04556fafeaf0c45; Hm_lvt_58c470ff9657d300e66c7f33590e53a8=1567343257,1567855179; Hm_lvt_b196e3c9d71b8c7dfa4d1d668cee40f0=1567343257,1567855179; FWinCookie=1; CookieId=fwdvl0zabwwttezjqo5w25hz; CheckIPAuto=; CheckIPDate=2019-09-08 14",
+	"Host" : " www.pkulaw.cn",
+	"Origin" : " http",
+	"Referer" : " http",
+	"User-Agent" : " Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+}
+
+
+
+
 headers = {
 	"Accept-Language": "zh-CN,zh;q=0.8", 
 	"Accept-Encoding": "gzip, deflate, sdch", 
@@ -38,8 +67,6 @@ headers = {
 	"Upgrade-Insecure-Requests": "1", 
 	"Proxy-Connection": "keep-alive"
 }
-
-
 postdata={
 	# 法律首页postda	
 	"lawindex":{
@@ -51,6 +78,10 @@ postdata={
 		'menu_item': 'law',
 		'EncodingName': ''
 	  	},
+
+		
+
+
 	"lawpage":{
 		"range": "name",
 		"check_hide_xljb": 1,
@@ -73,76 +104,136 @@ postdata={
 	}
 }
 
-SERVER_IP='127.0.0.1'
-PORT=27017
-DBNAME="splider"
+import random
+import urllib as ulb
+
 
 
 
 # 抽取北大法宝url
+@timeout_decorator.timeout(20)
 def getUrl(params):
-	i=random.randint(0, 24)
-	urls=proxy.IPList_61()
-	pro_item=urls[i]
-	print(pro_item)
-	proxies={ "http": "http://"+pro_item }
-
-	baseurl="http://www.pkulaw.cn/doSearch.ashx"
-	# 爬取首页url
-	resp=requests.post(baseurl,headers=headers,data=params,proxies=proxies)
-	fo=open('tmp.html','w',encoding='utf-8')
-	fo.write(resp.text)
-
-
-
-def parseContent():	
-	fi=open('tmp.html','r',encoding='utf-8')
-	# print(type(resp.text))
-	reg=r'(.*) href=\"(fulltext_form.aspx\?Db=chl&Gid=.*)\" target=\"_blank\"'
-	# line=" onclick=\"clickcss(this);\" href=\"fulltext_form.aspx?Db=chl&Gid=d8db5e659bc282b9bdfb&keyword=&EncodingName=&Search_Mode=&Search_IsTitle=0\" 中华人民共和国城市房地产管理法(2019修正)</a></td>"
-	links=[]
-	for line in fi.readlines():
-		# print(line)
-		matchobj=re.match(reg,line)
-		if  matchobj:
-			print(matchobj.group(2))
-			# saveUrl(matchobj.group(2))
 	
+	# proxies={ "http": "http://"+pro_item }
+	try:
+		baseurl="http://www.pkulaw.cn/doSearch.ashx"
+		# 爬取首页url
+		# resp=requests.post(baseurl,headers=headers,data=params,proxies=proxies)
+		header,proxies=proxy.xundai()
+		print(proxies)
+		params=postdata["lawindex"]
+		resp=requests.post(baseurl,headers=headers,data=params)
+		fo=open('tmp.html','w',encoding='utf-8')
+		fo.write(resp.text)
+		# print(resp.text)
+		
+		return True
+	except:
+		print("url time out")
+		return False
+
+
+
+
+#parse file url and save the url to mongodb;
+def parseContent():
+	try:
+		fi=open('tmp.html','r',encoding='utf-8')
+		# print(type(resp.text))
+		reg=r'(.*) href=\"(fulltext_form.aspx\?Db=chl&Gid=.*)\" target=\"_blank\"'
+		# line=" onclick=\"clickcss(this);\" href=\"fulltext_form.aspx?Db=chl&Gid=d8db5e659bc282b9bdfb&keyword=&EncodingName=&Search_Mode=&Search_IsTitle=0\" 中华人民共和国城市房地产管理法(2019修正)</a></td>"
+		links=[]
+		for line in fi.readlines():
+			# print(line)
+			matchobj=re.match(reg,line)
+			if  matchobj:
+				print(matchobj.group(2))
+				saveUrl(matchobj.group(2))
+	except:
+		print('parse file url failed')
+
+# save url to the collection fabaolist of mongodb 	
 def saveUrl(url):
 	conn = MongoClient(SERVER_IP, PORT)
-	db = conn.splider  
-	my_set = db.urlist
-	reg=r'(.*Db=chi1&)(Gid=.*)&(.*)'
+	db = conn.spider  
+	my_set = db.fabaolist
+	reg=r'(.*Db=chl&)(Gid=.*)&(.*)'
 	matchobj=re.match(reg,url)
 	if matchobj:
-		id=matchobj.group(1)
+		id=matchobj.group(2).split('=')[1]
+		print(id)
 	else:
 		id=''
+		print("id is null")
 	doc={
 		"id":id,
 		"url":url,
 		"isdownload":0,
 		"source":"FB",
 	}
+	
 	try:
-		my_set.insert(doc)
-		return True
+		first=my_set.find()
+		if first:
+			my_set.insert(doc)
+		else:
+			res=my_set.find({"id":id})
+			if res.count==0:
+				my_set.insert(doc)
+			else:
+				print("the url is exists")
+			return True
 	except:
+		print('url save failed')
 		return False
 
 
 
+#spider fabao network url law other page
+def nextPage_law():
+	try:
+		for i in range(2,70):
+			params=postdata["lawpage"]
+			params["aim_page"]=i
+			flag=getUrl(params)
+			if	flag:
+				parseContent()
+			print("page "+ str(i) +"complete")
+		time.sleep(10)
+	except Exception as e:
+		print("process exit(1)")
+		print(e)
 
-def run():
-	getUrl(postdata["lawindex"])
-	parseContent()
-	for i in range(1,69,10):
-		postdata["lawpage"]["aim_page"]=i
-		getUrl(postdata["lawpage"])
+#spider fabao network url law other page
+def nextPage_xingzheng():
+	try:
+		indexpage=pdata["indexpage"]
+		print(indexpage)
+		flag=getUrl(indexpage)
 		parseContent()
+		for i in range(2,250):
+			params=pdata["otherpage"]
+			params["aim_page"]=i
+			flag=getUrl(params)
+			if	flag:
+				parseContent()
+			print("page "+ str(i) +"complete")
+			time.sleep(10)
+	except Exception as e:
+		print("process exit(1)")
+		print(e)
 
 
-
+def lastpage():
+	params=pdata["otherpage"]
+		params["aim_page"]=249
+		flag=getUrl(params)
+		if	flag:
+			parseContent()
 
 if __name__ == "__main__":
-    run()
+	# print(params)
+	# saveUrl("fulltext_form.aspx?Db=chl&Gid=bac4df4f183c37bfbdfb&keyword=&EncodingName=&Search_Mode=&Search_IsTitle=0")
+	# lastpage()
+
+	nextPage_xingzheng()

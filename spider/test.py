@@ -1,10 +1,14 @@
-from urllib.parse import urlencode
-import postdata
 
-data = {
-    'a': 'test',
-    'name': ' 中国'
-}
-print(urlencode(data))
+# import time
+# import timeout_decorator
+ 
+# import os,datetime
 
-print(postdata.postdata)
+# filedate=time.strftime("%Y-%m-%d%H:%M:%S", time.localtime())
+# os.system('cp test.log test.log_'+filedate)
+
+
+import uuid
+
+id="377EF8C056C62113E3510356CD866D062CD82F4BD0A1F26B"
+print(len(id))
